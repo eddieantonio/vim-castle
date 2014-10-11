@@ -1,5 +1,5 @@
 " .vimrc
-" Author: Eddie Antonio Santos <easantos>
+" Author: Eddie Antonio Santos <easantos@ualberta.ca>
 " See also: .vim/after/plugins
 
 " Always use Unicode
@@ -15,30 +15,33 @@ Plugin 'gmarik/vundle'
 " Colour schemes
 Plugin 'vim-scripts/desertEx'
 
+" First, some dependencies...
 " Tabular must go before some plugin...
 Plugin 'godlygeek/tabular'
+" vim-misc must go before vim-easytags
+Plugin 'xolox/vim-misc'
 
 " Languages
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'jimmyhchan/dustjs.vim'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'jimenezrick/vimerl'
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jakar/vim-json'
 Plugin 'groenewege/vim-less'
 Plugin 'mintplant/vim-literate-coffeescript'
+Plugin 'justinmeza/lolcode.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'alunny/pegjs-vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'derekwyatt/vim-sbt'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'wavded/vim-stylus'
-Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'jimenezrick/vimerl'
 Plugin 'wannesm/wmgraphviz.vim'
-Plugin 'justinmeza/lolcode.vim'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 " Tim Pope awesomeness.
 Plugin 'tpope/vim-abolish'
@@ -56,8 +59,10 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
-"Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'tommcdo/vim-exchange'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'eddieantonio/vim-preserve'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'AndrewRadev/splitjoin.vim'
@@ -65,11 +70,11 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'wakatime/vim-wakatime'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tommcdo/vim-exchange'
-Plugin 'vim-pandoc/vim-pandoc'
 
-" TODO: Move all of this configuration to after/plugin!
+
+" Standard stuff.
+syntax on
+filetype plugin indent on
 
 " Ensure that text is properly wrapped in comment; joining commented
 " lines concatenates the comments properly; and preexisting long lines are
@@ -77,33 +82,6 @@ Plugin 'vim-pandoc/vim-pandoc'
 " See `:help fo-table` for more info on these options
 set formatoptions+=cl2j
 
-"
-" Syntastic
-
-" Disable pylint -- Will use Dispatch to lint instead.
-let g:syntastic_python_checkers=['python']
-
-" Don't check for Scala.
-let g:syntastic_scala_checkers=[]
-
-" Use clang -fsyntax-only
-let g:syntastic_cpp_compiler = 'c++'
-let g:syntastic_cpp_compiler_options="-fsyntax-only -std=c++0x"
-
-" Why wouldn't you enable this in header files?
-let g:syntastic_c_check_header = 1
-let g:syntastic_cpp_check_header = 1
-
-" Disable Markdown folding
-let g:vim_markdown_folding_disabled=1
-
-" Easy Motion config.
-let g:EasyMotion_smartcase = 1
-
-
-" Standard stuff.
-syntax on
-filetype plugin indent on
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
@@ -111,9 +89,8 @@ if &t_Co >= 256 || has("gui_running")
 endif
 
 " The default, but can use <space> as an alias.
+" See after/plugin/maps.vim for more details.
 let mapleader="\\"
-
-
 
 " Enable the dang mouse!
 if has('mouse')
@@ -154,16 +131,3 @@ set modelines=5
 
 " Use OmniComplete
 set omnifunc=syntaxcomplete
-
-" SuperTab configuration.
-let g:SuperTabDefaultCompletionType = 'context'
-" Override 'insert previously insterted text and stop' for SuperTab
-if !has("gui_running")
-    imap <C-@> <C-Space>
-endif
-
-" Apparently I like Eclipse...
-let g:SuperTabMappingForward = '<C-Space>'
-let g:SuperTabClosePreviewOnPopupClose = 1
-
-
