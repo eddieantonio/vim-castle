@@ -1,11 +1,10 @@
 " .vimrc
 " Author: Eddie Antonio Santos <easantos@ualberta.ca>
-" See also: .vim/after/plugins
+" See also: .vim/plugins and .vim/after/plugins
 
 " Always use Unicode
 set encoding=utf-8
 setglobal fileencoding=utf-8
-
 
 " Vundle first -- Relying on sensible.vim
 set rtp+=~/.vim/bundle/vundle/
@@ -88,8 +87,8 @@ if &t_Co >= 256 || has("gui_running")
   colorscheme desertEx
 endif
 
-" The default, but can use <space> as an alias.
-" See after/plugin/maps.vim for more details.
+" The default, but can use <Space> as an alias.
+" See .vim/plugin/maps.vim for more details.
 let mapleader="\\"
 
 " Enable the dang mouse!
