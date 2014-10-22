@@ -50,6 +50,12 @@ nnoremap <Leader>= :call Preserve("normal gg=G")<CR>
 " Copy the entire file into system clipboard.
 nnoremap <Leader>y :call Preserve("normal gg\"+yG")<CR>
 
+" EasyMotion
+" Use a different prefix...
+map <Leader>f <Plug>(easymotion-prefix)
+" ...to make way for the versitile 's' motion!
+map <Leader><Leader> <Plug>(easymotion-s)
+
 " Vi. Live it.
 noremap <Up> <NOP>
 noremap <Down> <NOP>
