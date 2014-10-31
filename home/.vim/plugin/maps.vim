@@ -22,6 +22,9 @@ map <Space> <Leader>
 " Enable this for EasyMotion stuff...
 map <Space><Space> <Leader><Leader>
 
+" Ctrl-P -> Ctrl-T
+let g:ctrlp_map = '<c-t>'
+
 " Easy window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
