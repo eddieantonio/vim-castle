@@ -31,6 +31,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Yank to the operating system clipboard (normal mode and visual mode):
+nnoremap <C-y> "*y
+vnoremap <C-y> "*y
+" Paste from the operating system clipboard:
+nmap <C-p> "*p
+
 " Hide highlighting with enter
 nnoremap <silent> <CR> :nohlsearch<CR>
 
