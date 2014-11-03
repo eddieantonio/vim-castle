@@ -41,6 +41,8 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'wavded/vim-stylus'
 Plugin 'jimenezrick/vimerl'
 Plugin 'wannesm/wmgraphviz.vim'
+Plugin 'fatih/vim-go'
+
 
 " Tim Pope awesomeness.
 Plugin 'tpope/vim-abolish'
