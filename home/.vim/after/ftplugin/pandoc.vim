@@ -8,3 +8,6 @@ setlocal softtabstop=2
 setlocal formatoptions-=2
 " See `:help fo-table` for more info.
 setlocal formatoptions+=tcqn
+
+hi NonText term=bold ctermfg=238 ctermbg=235
+

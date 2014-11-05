@@ -1,6 +1,12 @@
 " THE GRANDE, ALMIGHTY MAP FILE
 " Author: Eddie Antonio Santos <easantos@ualberta.ca>
 
+" Space as Leader
+map <Space> <Leader>
+" For some weird reason, double space doesn't work.
+" Enable this for EasyMotion stuff...
+map <Space><Space> <Leader><Leader>
+
 " Don't use Ex mode; use Q for formatting
 vnoremap Q gq
 nnoremap Q vipgq
@@ -16,16 +22,10 @@ nnoremap Y y$
 " Remaps 'jj' to escape! Controversial, though useful.
 inoremap jj <ESC>
 
-" Space as Leader
-map <Space> <Leader>
-" For some weird reason, double space doesn't work.
-" Enable this for EasyMotion stuff...
-map <Space><Space> <Leader><Leader>
-
 " Ctrl-P -> Ctrl-T
 let g:ctrlp_map = '<c-t>'
 
-" Easy window navigation
+" Easy split navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -47,6 +47,11 @@ nnoremap dc :%s/\<<C-r><C-w>\>//g<Left><Left><C-r><C-w>
 
 " Save on Leader w
 nnoremap <Leader>w :w<CR>
+
+" (In OS X) opens the current file in the default application.
+nnoremap <Leader>o :!open %<CR><CR>
+" Allows me to choose what to open.
+nnoremap <Leader>O :!open 
 
 " Vim-Dispatch, I guess...
 nnoremap <Leader>m :Make<CR>
