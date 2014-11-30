@@ -19,8 +19,15 @@ vnoremap > >gv
 " and U Quickly go to salvage it?
 nnoremap Y y$
 
-" Remaps 'jj' to escape! Controversial, though useful.
-inoremap jj <ESC>
+" Automatically use sane regexs
+nnoremap / /\v
+vnoremap / /\v
+
+" The Smash Escape.
+inoremap jk <Esc>
+inoremap kj <Esc>
+" I guess I just hate things with js in them.
+inoremap jj <Esc>
 
 " Ctrl-P -> Ctrl-T
 let g:ctrlp_map = '<c-t>'
