@@ -71,6 +71,7 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'tell-k/vim-autopep8'
 
 
 " Standard stuff.
@@ -82,7 +83,6 @@ filetype plugin indent on
 " never automatically wrapped.
 " See `:help fo-table` for more info on these options
 set formatoptions+=cl2j
-
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
