@@ -14,3 +14,6 @@ let g:syntastic_cpp_compiler_options="-fsyntax-only -std=c++0x"
 " Why wouldn't you enable this in header files?
 let g:syntastic_c_check_header = 1
 let g:syntastic_cpp_check_header = 1
+
+" Always populate the location list. ALWAYS.
+let g:syntastic_always_populate_loc_list = 1

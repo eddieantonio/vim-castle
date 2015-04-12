@@ -26,8 +26,6 @@ vnoremap / /\v
 " The Smash Escape.
 inoremap jk <Esc>
 inoremap kj <Esc>
-" I guess I just hate things with js in them.
-inoremap jj <Esc>
 
 " Ctrl-P -> Ctrl-T
 let g:ctrlp_map = '<c-t>'
@@ -47,18 +45,20 @@ nmap <C-p> "*p
 " Hide highlighting with enter
 nnoremap <silent> <CR> :nohlsearch<CR>
 
-" Search and replace word under cursor
+" Search and [r]eplace word under cursor
 nnoremap dr :%s/\<<C-r><C-w>\>//g<Left><Left>
-" Search and change word under cursor
+" Search and [c]hange word under cursor
 nnoremap dc :%s/\<<C-r><C-w>\>//g<Left><Left><C-r><C-w>
 
-" Save on Leader w
+" Save on <Leader> w
 nnoremap <Leader>w :w<CR>
 
-" (In OS X) opens the current file in the default application.
+" (In OS X) Opens the current file in the default application.
 nnoremap <Leader>o :!open %<CR><CR>
-" Allows me to choose what to open.
+" (In OS X) Allows me to choose what to open.
 nnoremap <Leader>O :!open 
+" (In OS X) Opens the current working directory in Finder.
+nnoremap <silent> <Leader><C-O> :!open .<CR><CR>
 
 " Vim-Dispatch, I guess...
 nnoremap <Leader>m :Make<CR>
@@ -82,6 +82,12 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" Toggle Git Gutter.
+nnoremap cog :GitGutterToggle<CR>
+
+" Toggle vim-signatures (shows marks).
+nnoremap com :SignatureToggle<CR>
 
 " When I want 2-space tabs!
 noremap <Leader>2 :set ts=2 sts=2 sw=2 et<CR>

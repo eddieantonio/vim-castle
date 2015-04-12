@@ -21,13 +21,15 @@ Plugin 'godlygeek/tabular'
 Plugin 'xolox/vim-misc'
 
 " Languages
-Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'jimmyhchan/dustjs.vim'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'jimenezrick/vimerl'
+Plugin 'fatih/vim-go'
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'jakar/vim-json'
 Plugin 'groenewege/vim-less'
 Plugin 'mintplant/vim-literate-coffeescript'
@@ -35,14 +37,12 @@ Plugin 'justinmeza/lolcode.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'alunny/pegjs-vim'
+Plugin 'dopefishh/vim-praat'
 Plugin 'rodjek/vim-puppet'
 Plugin 'derekwyatt/vim-sbt'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'wavded/vim-stylus'
-Plugin 'jimenezrick/vimerl'
 Plugin 'wannesm/wmgraphviz.vim'
-Plugin 'fatih/vim-go'
-
 
 " Tim Pope awesomeness.
 Plugin 'tpope/vim-abolish'
@@ -57,22 +57,23 @@ Plugin 'tpope/vim-vinegar'
 
 " Other.
 Plugin 'vim-scripts/a.vim'
+Plugin 'tell-k/vim-autopep8'
 Plugin 'ap/vim-css-color'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'xolox/vim-easytags'
 Plugin 'tommcdo/vim-exchange'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'eddieantonio/vim-preserve'
+Plugin 'kshenoy/vim-signature'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'wakatime/vim-wakatime'
-Plugin 'tell-k/vim-autopep8'
-
 
 " Standard stuff.
 syntax on
