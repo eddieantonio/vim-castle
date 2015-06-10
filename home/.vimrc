@@ -22,7 +22,6 @@ Plugin 'xolox/vim-misc'
 
 " Languages
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'jimmyhchan/dustjs.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'jimenezrick/vimerl'
 Plugin 'fatih/vim-go'
@@ -31,18 +30,24 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'jakar/vim-json'
+Plugin 'mxw/vim-jsx'
 Plugin 'groenewege/vim-less'
 Plugin 'mintplant/vim-literate-coffeescript'
 Plugin 'justinmeza/lolcode.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'alunny/pegjs-vim'
+Plugin 'StanAngeloff/php.vim'
 Plugin 'dopefishh/vim-praat'
 Plugin 'rodjek/vim-puppet'
 Plugin 'derekwyatt/vim-sbt'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'wavded/vim-stylus'
 Plugin 'wannesm/wmgraphviz.vim'
+Plugin 'jceb/vim-orgmode'
+Plugin 'veloce/vim-behat'
+Plugin 'niklasl/vim-rdf'
+Plugin 'chrisbra/csv.vim'
+Plugin 'Omer/vim-sparql'
 
 " Tim Pope awesomeness.
 Plugin 'tpope/vim-abolish'
@@ -54,9 +59,11 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-vinegar'
+Plugin 'tpope/vim-speeddating'
 
 " Other.
 Plugin 'vim-scripts/a.vim'
+Plugin 'bling/vim-airline'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'ap/vim-css-color'
 Plugin 'kien/ctrlp.vim'
@@ -64,6 +71,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'xolox/vim-easytags'
 Plugin 'tommcdo/vim-exchange'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'eddieantonio/vim-preserve'
@@ -130,6 +138,3 @@ set titleold=""
 " Modeline stuff
 set modeline
 set modelines=5
-
-" Use OmniComplete
-set omnifunc=syntaxcomplete

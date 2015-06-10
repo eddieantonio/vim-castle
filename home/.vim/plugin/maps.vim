@@ -91,3 +91,5 @@ nnoremap com :SignatureToggle<CR>
 
 " When I want 2-space tabs!
 noremap <Leader>2 :set ts=2 sts=2 sw=2 et<CR>
+" When I want hard tabs!
+noremap <Leader>8 :set ts=8 sts=8 sw=8 noet<CR>
