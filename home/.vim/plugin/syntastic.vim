@@ -22,7 +22,7 @@ let g:syntastic_c_check_header = 1
 let g:syntastic_cpp_check_header = 1
 
 " Use JSXHint
-let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Always populate the location list. ALWAYS.
 let g:syntastic_always_populate_loc_list = 1
