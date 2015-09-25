@@ -7,9 +7,9 @@ set encoding=utf-8
 setglobal fileencoding=utf-8
 
 " Vundle first -- Relying on sensible.vim
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Plugin 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
 " Colour schemes
 Plugin 'vim-scripts/desertEx'
@@ -21,33 +21,38 @@ Plugin 'godlygeek/tabular'
 Plugin 'xolox/vim-misc'
 
 " Languages
+Plugin 'veloce/vim-behat'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'chrisbra/csv.vim'
+Plugin 'neo4j-contrib/cypher-vim-syntax'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'jimenezrick/vimerl'
 Plugin 'fatih/vim-go'
 Plugin 'othree/html5.vim'
+" My fork with proper ECMASCript 2015 highlighting.
+Plugin 'file:///Users/eddieantonio/Projects/Forks/vim-javascript'
+" TODO: When ECMASCript 2015 features end up in master,
+" use master, or a tagged commit.
+"Plugin 'pangloss/vim-javascript@develop'
+Plugin 'mxw/vim-jsx'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'pangloss/vim-javascript'
+Plugin 'dag/vim2hs'
+Plugin 'hail2u/vim-css3-syntax'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'jakar/vim-json'
-Plugin 'mxw/vim-jsx'
 Plugin 'groenewege/vim-less'
-Plugin 'mintplant/vim-literate-coffeescript'
 Plugin 'justinmeza/lolcode.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'alunny/pegjs-vim'
 Plugin 'StanAngeloff/php.vim'
-Plugin 'dopefishh/vim-praat'
 Plugin 'rodjek/vim-puppet'
+Plugin 'niklasl/vim-rdf'
 Plugin 'derekwyatt/vim-sbt'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'wannesm/wmgraphviz.vim'
-Plugin 'jceb/vim-orgmode'
-Plugin 'veloce/vim-behat'
-Plugin 'niklasl/vim-rdf'
-Plugin 'chrisbra/csv.vim'
 Plugin 'Omer/vim-sparql'
+Plugin 'evidens/vim-twig'
+Plugin 'wannesm/wmgraphviz.vim'
 
 " Tim Pope awesomeness.
 Plugin 'tpope/vim-abolish'
@@ -82,6 +87,8 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'wakatime/vim-wakatime'
+
+call vundle#end()
 
 " Standard stuff.
 syntax on
