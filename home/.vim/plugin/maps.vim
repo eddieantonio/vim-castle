@@ -23,10 +23,6 @@ nnoremap Y y$
 nnoremap / /\v
 vnoremap / /\v
 
-" The Smash Escape.
-inoremap jk <Esc>
-inoremap kj <Esc>
-
 " Ctrl-P -> Ctrl-T
 let g:ctrlp_map = '<c-t>'
 
@@ -56,7 +52,7 @@ nnoremap <Leader>w :w<CR>
 " (In OS X) Opens the current file in the default application.
 nnoremap <Leader>o :!open %<CR><CR>
 " (In OS X) Allows me to choose what to open.
-nnoremap <Leader>O :!open 
+nnoremap <Leader>O :!open
 " (In OS X) Opens the current working directory in Finder.
 nnoremap <silent> <Leader><C-O> :!open .<CR><CR>
 
