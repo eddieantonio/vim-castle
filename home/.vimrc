@@ -72,7 +72,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'ap/vim-css-color'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'xolox/vim-easytags'
 Plugin 'tommcdo/vim-exchange'
 Plugin 'airblade/vim-gitgutter'
@@ -91,8 +91,8 @@ Plugin 'wakatime/vim-wakatime'
 call vundle#end()
 
 " Standard stuff.
-syntax on
 filetype plugin indent on
+syntax on
 
 " Ensure that text is properly wrapped in comment; joining commented
 " lines concatenates the comments properly; and preexisting long lines are

@@ -1,3 +1,4 @@
+2 chainz
 affixation
 Allamanis
 allomorph
@@ -12,35 +13,46 @@ AutoComplete
 AutoComplete+
 backformation
 Bambara
+Barasano
 Barbosa
 Behat
 blog
+BOOTP
 Caley
 callables
 chamberlin
 chillin'
 chiptune
+circumfix
+clearfix
 cliticization
 Clojure
 codebase
 CoffeeScript
+correlational
 cromulent
 CSC
 CSS
 D3
 Davood Rafiei
+Debian
 derived
 determinatives
 Dethe
+DHCP
 Django
 doctest
+doctests
 easy-peasy
 ECMAScript
 emoji
 endian
 enqueuing
 Esbat
+evidentiality
 exocentric
+exponence
+extended_ascii
 extremophile
 extremophiles
 fanboys
@@ -65,13 +77,16 @@ Hindle
 Hiragana
 hoighty toighty
 homophonic
+ICMP
 IDE
 initialisms
 inksheds
 inline
+ISRI
 ISSS
 iterable
 itty-bitty
+JavaScript's
 Jonan
 jQuery
 JSON
@@ -85,9 +100,11 @@ lexer
 lexing
 linting
 LiveBook
+localhost
 localness
 lol
 MacEwan
+macroclass
 Mariko
 McCloud
 MDN
@@ -98,10 +115,12 @@ MeSH
 metadata
 MetaMap
 metaprogramming
+mirative
 MITLM
 mixin
 MLA
 mockups
+monophthong
 moraic
 morphograms
 morphographic
@@ -115,7 +134,9 @@ Neo4j
 NLP
 Node.js
 npm
+NTP
 Ogham
+Pandoc
 per se
 PHP
 pictograms
@@ -137,6 +158,7 @@ RDF
 refactor
 refactored
 RESTful
+ReStructured Text
 RGB
 Sabbat
 sabbats
@@ -150,7 +172,9 @@ significand
 skyblue
 smartphone
 SPARQL
+SpiderMonkey
 stdin
+stylesheet
 suppletion
 surjective
 surprisal
@@ -161,14 +185,18 @@ tnetennba
 tokenization
 tokenizer
 trifecta
+Ubuntu
 UCOSP
 UI
 UMLS
 UnnaturalCode
 UnnaturalCode's
+UTF-16
 UTF-8
 V8
+W3C
 Waterbear
+WebSocket
 whackload
 Wicca
 Wiccan
@@ -176,6 +204,7 @@ Wiccans
 wiki
 Wikipedia
 Witterick
+wordform
 workflow
 Wyvern
 XMLHttpRequest
