@@ -9,5 +9,5 @@ setlocal formatoptions-=2
 " See `:help fo-table` for more info.
 setlocal formatoptions+=tcqn
 
+" Get rid of the annoying non-text highlight.
 hi NonText term=bold ctermfg=238 ctermbg=235
-
