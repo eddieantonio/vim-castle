@@ -31,7 +31,7 @@ Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'}
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-dispatch', { 'on': 'Make' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
@@ -62,7 +62,7 @@ Plug 'tell-k/vim-autopep8', { 'for': 'python' }
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'html'] }
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', { 'on': 'GitGutterToggle' }
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'antoyo/vim-licenses'
 Plug 'xolox/vim-misc' | Plug 'xolox/vim-easytags'
