@@ -13,35 +13,21 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-scripts/desertEx'
 
 " Languages
-Plug 'veloce/vim-behat'
-Plug 'kchmck/vim-coffee-script'
-Plug 'chrisbra/csv.vim'
-Plug 'neo4j-contrib/cypher-vim-syntax'
-Plug 'elixir-lang/vim-elixir'
-Plug 'jimenezrick/vimerl'
-Plug 'fatih/vim-go'
-Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'digitaltoad/vim-jade'
-Plug 'dag/vim2hs'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'jakar/vim-json'
-Plug 'lervag/vimtex'
-Plug 'groenewege/vim-less'
-Plug 'justinmeza/lolcode.vim'
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'chrisbra/csv.vim', { 'for': ['csv', 'tsv'] }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx' 
+Plug 'dag/vim2hs', { 'for': 'haskell' }
+Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
+Plug 'jakar/vim-json', { 'for': 'json' }
+Plug 'lervag/vimtex', { 'for': ['tex', 'latex'] }
+Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'alunny/pegjs-vim'
-Plug 'StanAngeloff/php.vim'
-Plug 'rodjek/vim-puppet'
-Plug 'niklasl/vim-rdf'
-Plug 'derekwyatt/vim-sbt'
-Plug 'derekwyatt/vim-scala'
-Plug 'Omer/vim-sparql'
-Plug 'evidens/vim-twig'
-Plug 'wannesm/wmgraphviz.vim'
+Plug 'StanAngeloff/php.vim', { 'for': 'php' }
+Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
+Plug 'Omer/vim-sparql', { 'for': 'sparql' }
+Plug 'evidens/vim-twig', { 'for': 'twig' }
+Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'} 
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
@@ -55,19 +41,25 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-speeddating'
 
+" Erlang IDE
+Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
+Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
+Plug 'vim-erlang/vim-erlang-tags', { 'for': 'erlang' }
+Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
+
 " Other.
-Plug 'vim-scripts/a.vim'
+Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/taglist.vim'
 Plug 'bling/vim-airline'
-Plug 'tell-k/vim-autopep8'
-Plug 'ap/vim-css-color'
+Plug 'tell-k/vim-autopep8', { 'for': 'python' }
+Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'html'] }
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
 Plug 'airblade/vim-gitgutter'
