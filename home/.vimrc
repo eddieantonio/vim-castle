@@ -54,7 +54,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'ervandew/supertab'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/taglist.vim'
 Plug 'bling/vim-airline'
