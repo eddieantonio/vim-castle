@@ -10,12 +10,13 @@ setglobal fileencoding=utf-8
 call plug#begin('~/.vim/plugged')
 
 " Colour schemes
-Plug 'vim-scripts/desertEx'
+"Plug 'vim-scripts/desertEx'
+Plug 'junegunn/seoul256.vim'
 
 " Languages
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'chrisbra/csv.vim', { 'for': ['csv', 'tsv'] }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx' 
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
 Plug 'dag/vim2hs', { 'for': 'haskell' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'jakar/vim-json', { 'for': 'json' }
@@ -27,7 +28,9 @@ Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
 Plug 'Omer/vim-sparql', { 'for': 'sparql' }
 Plug 'evidens/vim-twig', { 'for': 'twig' }
-Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'} 
+Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'}
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
@@ -47,6 +50,10 @@ Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
 Plug 'vim-erlang/vim-erlang-tags', { 'for': 'erlang' }
 Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
 
+" TypeScript IDE
+Plug 'Shougo/vimproc.vim'  |
+  \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
+
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
 Plug 'kien/ctrlp.vim'
@@ -57,13 +64,13 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'scrooloose/syntastic'
-Plug 'vim-scripts/taglist.vim'
-Plug 'bling/vim-airline'
+Plug 'majutsushi/tagbar'
+Plug 'vim-airline/vim-airline'
 Plug 'tell-k/vim-autopep8', { 'for': 'python' }
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'html'] }
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
-Plug 'airblade/vim-gitgutter', { 'on': 'GitGutterToggle' }
+Plug 'airblade/vim-gitgutter'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'antoyo/vim-licenses'
 Plug 'xolox/vim-misc' | Plug 'xolox/vim-easytags'
@@ -71,6 +78,8 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'eddieantonio/vim-preserve'
 Plug 'kshenoy/vim-signature'
 Plug 'wakatime/vim-wakatime'
+Plug 'chrisbra/unicode.vim'
+Plug 'hynek/vim-python-pep8-indent'
 
 call plug#end()
 
@@ -86,7 +95,12 @@ set formatoptions+=cl2j
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  colorscheme desertEx
+  "colorscheme desertEx
+  " seoul256 (dark):
+  "   Range:   233 (darkest) ~ 239 (lightest)
+  "   Default: 237
+  let g:seoul256_background = 235
+  colorscheme seoul256
 endif
 
 " The default, but can use <Space> as an alias.

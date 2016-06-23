@@ -46,6 +46,12 @@ nnoremap dr :%s/\<<C-r><C-w>\>//g<Left><Left>
 " Search and [c]hange word under cursor
 nnoremap dc :%s/\<<C-r><C-w>\>//g<Left><Left><C-r><C-w>
 
+" (from http://stackoverflow.com/a/597932)
+" Search and ([s]cope) [r]eplace word under cursor
+nnoremap dsr gd[{V%::s/<C-R>///gc<Left><Left><Left>
+" Search and ([s]cope) [c]hange word under cursor
+nnoremap dsc gd[{V%::s/<C-R>///gc<Left><Left><Left>
+
 " Save on <Leader> w
 nnoremap <Leader>w :w<CR>
 
@@ -84,6 +90,9 @@ nnoremap cog :GitGutterToggle<CR>
 
 " Toggle vim-signatures (shows marks).
 nnoremap com :SignatureToggle<CR>
+
+" Toggle vim-signatures (shows marks).
+nnoremap cot :TagbarToggle<CR>
 
 " When I want 2-space tabs!
 noremap <Leader>2 :set ts=2 sts=2 sw=2 et<CR>

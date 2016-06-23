@@ -1,7 +1,2 @@
-" Experimental!
-" Move to JavaScript ftdetect... I guess.
-setlocal conceallevel=1
-
-let g:javascript_conceal = 1
-let g:javascript_conceal_this       = "@"
-let g:javascript_conceal_prototype  = "¶"
+" Default is a 2 space indent.
+setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
