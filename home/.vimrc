@@ -31,6 +31,9 @@ Plug 'evidens/vim-twig', { 'for': 'twig' }
 Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
+Plug 'dylon/vim-antlr'
+Plug 'jboyens/vim-stringtemplate'
+Plug 'Superbil/llvm.vim'
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
@@ -61,7 +64,10 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'Shougo/neocomplete.vim'
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+
+"let g:ycm_python_binary_path = 'python'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
@@ -92,6 +98,8 @@ syntax on
 " never automatically wrapped.
 " See `:help fo-table` for more info on these options
 set formatoptions+=cl2j
+
+set showcmd
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
