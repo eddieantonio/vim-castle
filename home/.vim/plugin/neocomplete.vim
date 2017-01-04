@@ -1,3 +1,6 @@
+" IT'S TOO SLOW
+finish
+
 " Based on: https://github.com/Shougo/neocomplete.vim#configuration-examples
 
 " Disable AutoComplPop.

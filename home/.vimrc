@@ -34,6 +34,7 @@ Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
 Plug 'dylon/vim-antlr'
 Plug 'jboyens/vim-stringtemplate'
 Plug 'Superbil/llvm.vim'
+Plug 'alunny/pegjs-vim'
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
@@ -64,10 +65,11 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'Shougo/neocomplete.vim'
-"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+"Plug 'Shougo/neocomplete.vim', { 'for': ['tex', 'latex'] }
 
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 "let g:ycm_python_binary_path = 'python'
+
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'

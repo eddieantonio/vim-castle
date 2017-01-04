@@ -21,8 +21,10 @@ let g:syntastic_cpp_compiler_options="-fsyntax-only -std=c++0x"
 let g:syntastic_c_check_header = 1
 let g:syntastic_cpp_check_header = 1
 
-" Use JSXHint
+" Use ESLint
 let g:syntastic_javascript_checkers = ['eslint']
 
 " Always populate the location list. ALWAYS.
 let g:syntastic_always_populate_loc_list = 1
+
+let g:syntastic_tex_checkers = ['chktex']
