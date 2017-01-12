@@ -33,7 +33,6 @@ Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
 Plug 'dylon/vim-antlr'
 Plug 'jboyens/vim-stringtemplate'
-Plug 'Superbil/llvm.vim'
 Plug 'alunny/pegjs-vim'
 
 " Tim Pope awesomeness.

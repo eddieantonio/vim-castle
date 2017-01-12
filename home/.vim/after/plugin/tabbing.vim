@@ -9,3 +9,9 @@ set softtabstop=4
 
 " Textwidth!
 set textwidth=78
+
+" Placing a `#` doesn't reset to the first column
+set nosmartindent
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
