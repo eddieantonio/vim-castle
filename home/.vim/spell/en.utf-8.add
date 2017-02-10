@@ -14,6 +14,7 @@ apps
 arity
 AST
 ASTs
+AUFS
 AutoComplete
 AutoComplete+
 backformation
@@ -25,6 +26,8 @@ Behat
 Bicho
 bigrams
 bigrams
+BioWare
+BioWare ULC
 BitBucket
 blog
 BOOTP
@@ -57,6 +60,7 @@ deduplicating
 deduplication
 deduplicator
 deduplicators
+Denilson
 derived
 determinatives
 Dethe
@@ -69,6 +73,7 @@ easy-peasy
 eClass/=
 ECMAScript/=
 ElasticSearch/=
+Eleni
 emoji
 endian
 enqueuing
@@ -142,7 +147,9 @@ Kieran
 Kneser-Ney
 Kolmogorov-Smirnov
 Kruskal
+Kruskal-Walis
 kun
+KVM
 LDA
 Levenshtein
 lexer
@@ -157,6 +164,7 @@ lol/?
 LSTM
 LSTMs
 Lucene
+LXC
 MacEwan
 macOS
 macroclass
@@ -171,6 +179,7 @@ MeSH
 metadata
 MetaMap
 metaprogramming
+microservice
 microservices
 mirative
 Mitacs
@@ -178,6 +187,7 @@ MITLM
 mixin
 MLA
 mockups
+MongoDB
 monophthong
 moraic
 morphograms
@@ -200,6 +210,9 @@ npm/=
 NTP
 Ogham
 OpenShift
+OpenSSH
+OpenVPN
+OpenVZ
 PaaS
 Pandoc
 parsable
@@ -207,6 +220,7 @@ PartyCrasher
 pathfinding
 PEG.js
 per se
+pgbench
 PHP
 phở
 pictograms
@@ -225,6 +239,7 @@ QUnit
 rackmount
 Rafiei
 Ramanaygam
+RAPL
 RDBMS
 RDF
 Redis
@@ -235,6 +250,7 @@ RESTful
 ReStructured Text/=
 RGB
 Rhythmbox
+RMS
 RNNs
 Romansky
 Sabbat
@@ -250,6 +266,7 @@ Shapiro
 Shift-JIS
 significand
 skyblue
+Smalltalk
 smartphone
 softmax
 Solinas
@@ -274,6 +291,7 @@ timestamp
 tnetennba
 tokenization
 tokenizer
+TPC-B
 trifecta
 Tsung
 TypeScript
@@ -285,6 +303,7 @@ UML
 UMLS
 unigram
 unigrams
+UnionFS
 UnnaturalCode's/=
 UnnaturalCode/=
 unparsable
@@ -311,7 +330,8 @@ Wilcoxon
 Wilk
 Witterick
 wordform
-Wordpress
+Wordpress/!
+WordPress
 workflow
 WSGI
 Wyvern
