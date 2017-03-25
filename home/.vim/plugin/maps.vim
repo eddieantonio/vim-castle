@@ -101,3 +101,14 @@ noremap <Leader>8 :set ts=8 sts=8 sw=8 noet<CR>
 
 " 'Jump' Uses YouCompleteMe to goto definition or declaration.
 noremap <silent> coj :YcmCompleter GoTo<CR>
+
+" I never use the default of 'U' so map it to UnicodeName instead.
+noremap U :UnicodeName<CR>
+
+" Sorts space-separated items in the current line.
+command SortLine call s:SortLine()
+function! s:SortLine()
+	" From: http://stackoverflow.com/a/1328392/6626414
+	let l:components = split(getline('.'), ' ')
+	call setline('.', join(sort(l:components), ' '))
+endfunction

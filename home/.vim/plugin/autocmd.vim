@@ -1,3 +1,2 @@
-" Sconstruct are Python files.
-autocmd BufNew,BufRead SConstruct setlocal ft=python
-autocmd BufNew,BufRead SConscript setlocal ft=python
+" Be able to write crontab files in-place.
+autocmd filetype crontab setlocal nobackup nowritebackup
