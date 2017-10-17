@@ -1,1 +1,1 @@
-let g:vimtex_latexmk_callback = 0
+let g:vimtex_compiler_latexmk = {'callback' : 0}
