@@ -6,34 +6,30 @@
 set encoding=utf-8
 setglobal fileencoding=utf-8
 
-" Vundle first -- Relying on sensible.vim
+" vim-plug first -- Relying on sensible.vim
 call plug#begin('~/.vim/plugged')
 
 " Colour schemes
-"Plug 'vim-scripts/desertEx'
 Plug 'junegunn/seoul256.vim'
 
 " Languages
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-Plug 'chrisbra/csv.vim', { 'for': ['csv', 'tsv'] }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
 Plug 'dag/vim2hs', { 'for': 'haskell' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'jakar/vim-json', { 'for': 'json' }
 Plug 'lervag/vimtex', { 'for': ['tex', 'latex'] }
 Plug 'groenewege/vim-less', { 'for': 'less' }
-Plug 'mustache/vim-mustache-handlebars'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
 Plug 'Omer/vim-sparql', { 'for': 'sparql' }
-Plug 'evidens/vim-twig', { 'for': 'twig' }
 Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
-Plug 'dylon/vim-antlr'
-Plug 'jboyens/vim-stringtemplate'
-Plug 'alunny/pegjs-vim'
+Plug 'dylon/vim-antlr', { 'for': ['antlr4'] }
+Plug 'alunny/pegjs-vim', { 'for': ['pegjs'] }
+Plug 'maxbane/vim-asm_ca65', { 'for': 'asm_ca65' }
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
@@ -47,6 +43,10 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-speeddating'
 
+" Python IDE
+Plug 'tell-k/vim-autopep8', { 'for': 'python' }
+Plug 'hynek/vim-python-pep8-indent', { 'for': ['python'] }
+
 " Erlang IDE
 Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
 Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
@@ -59,25 +59,18 @@ Plug 'Shougo/vimproc.vim'  |
 
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
-Plug 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim' " Time to upgrade?
 Plug 'scrooloose/nerdcommenter'
 Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
-"Plug 'Shougo/neocomplete.vim', { 'for': ['tex', 'latex'] }
 
-"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
-"let g:ycm_python_binary_path = 'python'
-
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
-Plug 'tell-k/vim-autopep8', { 'for': 'python' }
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'html'] }
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
-Plug 'airblade/vim-gitgutter'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'antoyo/vim-licenses'
 Plug 'xolox/vim-misc' | Plug 'xolox/vim-easytags'
@@ -86,7 +79,6 @@ Plug 'eddieantonio/vim-preserve'
 Plug 'kshenoy/vim-signature'
 Plug 'wakatime/vim-wakatime'
 Plug 'chrisbra/unicode.vim'
-Plug 'hynek/vim-python-pep8-indent'
 
 call plug#end()
 
