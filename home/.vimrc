@@ -57,6 +57,9 @@ Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
 Plug 'Shougo/vimproc.vim'  |
   \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
 
+" Completion
+Plug 'ajh17/VimCompletesMe'
+
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
 Plug 'kien/ctrlp.vim' " Time to upgrade?
@@ -64,6 +67,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
+
+Plug 'wincent/terminus'  " Cursor shape and bracketed paste mode!
 
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
@@ -107,11 +112,6 @@ endif
 " The default, but can use <Space> as an alias.
 " See .vim/plugin/maps.vim for more details.
 let mapleader="\\"
-
-" Enable the dang mouse!
-if has('mouse')
-  set mouse=a
-endif
 
 " I guess I don't like folds?
 set nofoldenable
