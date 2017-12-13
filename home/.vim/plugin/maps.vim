@@ -19,12 +19,10 @@ vnoremap > >gv
 " and U Quickly go to salvage it?
 nnoremap Y y$
 
-" Automatically use sane regexs
-nnoremap / /\v
-vnoremap / /\v
+" fzf TODO: extract into its own file.
+nnoremap <Leader><Tab> :GFiles<CR>
+nnoremap <Leader><S-Tab> :Files<CR>
 
-" Ctrl-P -> Ctrl-T
-let g:ctrlp_map = '<c-t>'
 
 " Easy split navigation
 nnoremap <C-h> <C-w>h

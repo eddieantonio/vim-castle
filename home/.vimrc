@@ -43,34 +43,23 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-speeddating'
 
-" Python IDE
-Plug 'tell-k/vim-autopep8', { 'for': 'python' }
-Plug 'hynek/vim-python-pep8-indent', { 'for': ['python'] }
+" Fuzzy file finder.
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
-" Erlang IDE
-Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
-Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
-Plug 'vim-erlang/vim-erlang-tags', { 'for': 'erlang' }
-Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
-
-" TypeScript IDE
-Plug 'Shougo/vimproc.vim'  |
-  \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
+" Syntax errors and linters
+Plug 'w0rp/ale' " Works only in Vim 8+ and NeoVim
 
 " Completion
 Plug 'ajh17/VimCompletesMe'
 
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
-Plug 'kien/ctrlp.vim' " Time to upgrade?
 Plug 'scrooloose/nerdcommenter'
 Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
-
-Plug 'wincent/terminus'  " Cursor shape and bracketed paste mode!
-
-Plug 'scrooloose/syntastic'
+Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'html'] }
@@ -85,11 +74,34 @@ Plug 'kshenoy/vim-signature'
 Plug 'wakatime/vim-wakatime'
 Plug 'chrisbra/unicode.vim'
 
+" Python IDE
+Plug 'tell-k/vim-autopep8', { 'for': 'python' }
+Plug 'hynek/vim-python-pep8-indent', { 'for': ['python'] }
+
+" Erlang IDE
+Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
+Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
+Plug 'vim-erlang/vim-erlang-tags', { 'for': 'erlang' }
+Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
+
+" TypeScript IDE
+Plug 'Shougo/vimproc.vim'  |
+  \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
+
 call plug#end()
 
 " Standard stuff.
 filetype plugin indent on
 syntax on
+
+" XXX: Gross configuration that should be factored out.
+let g:airline#extensions#ale#enabled = 1
+let g:ale_virtualenv_dir_names = ['.env', '.pyenv', 'venv', 'virtualenv']
+" Use these linters for Python
+let g:ale_linters = {'python': ['mypy', 'pycodestyle', 'isort']}
+let g:ale_fixers = {'python': ['autopep8', 'isort']}
+" Fix by typing 'caf'
+map caf <Plug>(ale_fix)
 
 " Ensure that text is properly wrapped in comment; joining commented
 " lines concatenates the comments properly; and preexisting long lines are
