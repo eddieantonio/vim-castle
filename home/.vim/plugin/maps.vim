@@ -94,11 +94,13 @@ nnoremap cot :TagbarToggle<CR>
 
 " When I want 2-space tabs!
 noremap <Leader>2 :set ts=2 sts=2 sw=2 et<CR>
+" When I want 4-space tabs!
+noremap <Leader>4 :set ts=4 sts=4 sw=4 et<CR>
 " When I want hard tabs!
 noremap <Leader>8 :set ts=8 sts=8 sw=8 noet<CR>
 
-" 'Jump' Uses YouCompleteMe to goto definition or declaration.
-noremap <silent> coj :YcmCompleter GoTo<CR>
+" Invoke :AleFix by typing 'caf' ("change ALE fix")
+map caf <Plug>(ale_fix)
 
 " I never use the default of 'U' so map it to UnicodeName instead.
 noremap U :UnicodeName<CR>

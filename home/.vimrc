@@ -94,15 +94,6 @@ call plug#end()
 filetype plugin indent on
 syntax on
 
-" XXX: Gross configuration that should be factored out.
-let g:airline#extensions#ale#enabled = 1
-let g:ale_virtualenv_dir_names = ['.env', '.pyenv', 'venv', 'virtualenv']
-" Use these linters for Python
-let g:ale_linters = {'python': ['mypy', 'pycodestyle', 'isort']}
-let g:ale_fixers = {'python': ['autopep8', 'isort']}
-" Fix by typing 'caf'
-map caf <Plug>(ale_fix)
-
 " Ensure that text is properly wrapped in comment; joining commented
 " lines concatenates the comments properly; and preexisting long lines are
 " never automatically wrapped.
