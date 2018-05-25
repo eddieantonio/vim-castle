@@ -29,6 +29,7 @@ Baeza-Yates
 Bambara
 Barasano
 Barbosa
+basically/?
 Behat
 Bicho
 bigrams
@@ -51,6 +52,7 @@ Christy
 CircleCI
 circumfix
 clearfix
+clearly/?
 clitic
 cliticization
 Clojure
@@ -78,6 +80,7 @@ Denilson
 derived
 determinatives
 Dethe
+DevTools
 DHCP
 Dhvani
 Django
@@ -85,8 +88,10 @@ Django's
 doctest
 doctests
 easy-peasy
+easy/?
 eClass/=
 ECMAScript/=
+ElasticSearch's
 ElasticSearch/=
 Eleni
 emoji
@@ -115,6 +120,7 @@ GDB
 geolocation
 GHTorrent
 Gigabit
+gimbal
 Gini index
 GitHub
 GloZell/=
@@ -125,6 +131,7 @@ GRU
 GSB
 hackathon
 Hadoop
+hammerspace
 hapax legomenon
 hard-coded
 Haskell
@@ -139,6 +146,8 @@ hiragana
 Hochreiter
 hoighty toighty
 homophonic
+hyperparameter
+hyperparameters
 hypervisor
 hypervisors
 ICMP
@@ -146,6 +155,7 @@ IDE
 initialisms
 inksheds
 inline
+IntelliJ
 interprocedural
 IPv4
 IPv6
@@ -155,6 +165,7 @@ ISRI
 ISSS
 iterable
 itty-bitty
+Itwêwina
 JavaScript's/=
 JavaScript/=
 Jira
@@ -162,6 +173,8 @@ Jonan
 jQuery/=
 JSDoc
 JSON
+JSX
+just/?
 Kalen
 kanbun
 kanji
@@ -174,11 +187,13 @@ Kneser-Ney
 Kolmogorov-Smirnov
 Kruskal
 Kruskal-Walis
+Kubernetes
 Kullback-Leibler
 kun
 KVM
 Lachler
 LDA
+Lethbridge
 Levenshtein
 lexer
 lexing
@@ -199,6 +214,7 @@ macOS/=
 macroclass
 MapReduce
 Mariko
+Maskwacîs
 McCloud
 MDN
 Meena
@@ -209,6 +225,7 @@ MeSH
 metadata
 MetaMap
 metaprogramming
+Metroid
 microservice
 microservices
 mirative
@@ -234,17 +251,25 @@ namespace
 naïve
 Near Realtime
 Neo4j
+NetHack
 NLP
 Node.js/=
 npm/=
 NTP
 Nvidia
+obviously/?
+of course/?
 Ogham
 OpenJDK's
 OpenShift
 OpenSSH
 OpenVPN
 OpenVZ
+Osmar
+Osmar Zaïane
+ouabaio
+overfit
+overfitting
 PaaS
 Pandoc
 parsable
@@ -266,6 +291,7 @@ PowerPoint
 proactively
 programmatically
 Project Lambdu
+Proth
 pseudocode
 psuedorandom
 Punycode
@@ -278,6 +304,7 @@ RAPL
 RDBMS
 RDF
 Redis
+redistributable/?
 refactor
 refactored
 repo
@@ -290,6 +317,8 @@ RMSprop
 RNN
 RNNs
 Romansky
+ruleset
+runtimes
 Sabbat
 Scheffler's
 Schleifenbauer
@@ -304,10 +333,12 @@ Shaiful
 Shapiro
 Shift-JIS
 significand
+simply/?
 skyblue
 Smalltalk
 SmartPaste
 smartphone
+SNES
 softmax
 Solinas
 SourceForge
@@ -321,11 +352,13 @@ stringly-typed
 Stroulia
 stylesheet
 subexpressions
+subsequences
 suppletion
 surjective
 surprisal
 SVG
 SVN
+TextEdit
 tf·idf
 Theano
 thresholding
@@ -382,18 +415,8 @@ Wyvern
 Xen
 Xeon
 XMLHttpRequest/=
+X̲aat Kíl
 YouTube/=
 ZeroMQ
 Zipf
 Zipf's
-hyperparameter
-hyperparameters
-#trctures
-ouabaio
-SNES
-Metroid
-Proth
-overfitting
-overfit
-#pecial/!
-Maskwacîs
