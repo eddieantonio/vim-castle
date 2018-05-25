@@ -18,7 +18,7 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
 Plug 'dag/vim2hs', { 'for': 'haskell' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'jakar/vim-json', { 'for': 'json' }
-Plug 'lervag/vimtex', { 'for': ['tex', 'latex'] }
+Plug 'lervag/vimtex'
 Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
@@ -30,6 +30,7 @@ Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
 Plug 'dylon/vim-antlr', { 'for': ['antlr4'] }
 Plug 'alunny/pegjs-vim', { 'for': ['pegjs'] }
 Plug 'maxbane/vim-asm_ca65', { 'for': 'asm_ca65' }
+Plug 'dopefishh/vim-praat'
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
@@ -62,7 +63,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
-Plug 'ap/vim-css-color', { 'for': ['css', 'less', 'html'] }
+Plug 'ap/vim-css-color'
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
 Plug 'michaeljsmith/vim-indent-object'
@@ -75,7 +76,7 @@ Plug 'wakatime/vim-wakatime'
 Plug 'chrisbra/unicode.vim'
 
 " Python IDE
-Plug 'tell-k/vim-autopep8', { 'for': 'python' }
+"Plug 'tell-k/vim-autopep8', { 'for': 'python' }
 Plug 'hynek/vim-python-pep8-indent', { 'for': ['python'] }
 
 " Erlang IDE
