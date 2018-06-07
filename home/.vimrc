@@ -31,6 +31,7 @@ Plug 'dylon/vim-antlr', { 'for': ['antlr4'] }
 Plug 'alunny/pegjs-vim', { 'for': ['pegjs'] }
 Plug 'maxbane/vim-asm_ca65', { 'for': 'asm_ca65' }
 Plug 'dopefishh/vim-praat'
+Plug 'rhysd/vim-llvm'
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-abolish'
@@ -49,7 +50,10 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " Syntax errors and linters
-Plug 'w0rp/ale' " Works only in Vim 8+ and NeoVim
+if v:version >= 800
+  " Works only in Vim 8+ and NeoVim
+  Plug 'w0rp/ale'
+endif
 
 " Completion
 Plug 'ajh17/VimCompletesMe'
@@ -76,7 +80,6 @@ Plug 'wakatime/vim-wakatime'
 Plug 'chrisbra/unicode.vim'
 
 " Python IDE
-"Plug 'tell-k/vim-autopep8', { 'for': 'python' }
 Plug 'hynek/vim-python-pep8-indent', { 'for': ['python'] }
 
 " Erlang IDE
@@ -148,3 +151,10 @@ set titleold=""
 " Modeline stuff
 set modeline
 set modelines=5
+
+" Experiment with ALE configuration
+autocmd FileType Python let g:ale_sign_column_always = 1
+let g:ale_sign_error = '🚫'
+let g:ale_sign_warning = '⚠️'
+nmap <C-k> <Plug>(ale_previous_wrap)
+nmap <C-j> <Plug>(ale_next_wrap)
