@@ -65,22 +65,16 @@ Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
-Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
-Plug 'ap/vim-css-color'
+Plug 'ap/vim-css-color', { 'for': ['css', 'html'] }
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'antoyo/vim-licenses'
-Plug 'xolox/vim-misc' | Plug 'xolox/vim-easytags'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'eddieantonio/vim-preserve'
 Plug 'kshenoy/vim-signature'
-Plug 'wakatime/vim-wakatime'
 Plug 'chrisbra/unicode.vim'
-
-" Python IDE
-Plug 'hynek/vim-python-pep8-indent', { 'for': ['python'] }
 
 " Erlang IDE
 Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
@@ -108,7 +102,6 @@ set showcmd
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  "colorscheme desertEx
   " seoul256 (dark):
   "   Range:   233 (darkest) ~ 239 (lightest)
   "   Default: 237
@@ -151,10 +144,3 @@ set titleold=""
 " Modeline stuff
 set modeline
 set modelines=5
-
-" Experiment with ALE configuration
-autocmd FileType Python let g:ale_sign_column_always = 1
-let g:ale_sign_error = '🚫'
-let g:ale_sign_warning = '⚠️'
-nmap <C-k> <Plug>(ale_previous_wrap)
-nmap <C-j> <Plug>(ale_next_wrap)

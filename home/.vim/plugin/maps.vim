@@ -1,7 +1,7 @@
 " THE GRANDE, ALMIGHTY MAP FILE
 " Author: Eddie Antonio Santos <easantos@ualberta.ca>
 
-" Space as Leader
+" Space as Leader (Animals were taken)
 map <Space> <Leader>
 " For some weird reason, double space doesn't work.
 " Enable this for EasyMotion stuff...
@@ -33,8 +33,6 @@ nnoremap <C-l> <C-w>l
 " Yank to the operating system clipboard (normal mode and visual mode):
 nnoremap <C-y> "+y
 vnoremap <C-y> "+y
-" Paste from the operating system clipboard:
-nmap <C-p> "+p
 
 " Hide highlighting with enter
 nnoremap <silent> <CR> :nohlsearch<CR>
@@ -112,3 +110,7 @@ function! s:SortLine()
 	let l:components = split(getline('.'), ' ')
 	call setline('.', join(sort(l:components), ' '))
 endfunction
+
+" ALE: Wrap between different errors.
+nmap <C-p> <Plug>(ale_previous_wrap)
+nmap <C-n> <Plug>(ale_next_wrap)
