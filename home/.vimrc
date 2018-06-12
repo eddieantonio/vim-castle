@@ -2,9 +2,12 @@
 " Author: Eddie Antonio Santos <easantos@ualberta.ca>
 " See also: .vim/plugins and .vim/after/plugins
 
-" Always use Unicode
-set encoding=utf-8
-setglobal fileencoding=utf-8
+" Automatically install vim-plug
+if !has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 " vim-plug first -- Relying on sensible.vim
 call plug#begin('~/.vim/plugged')
@@ -92,6 +95,10 @@ call plug#end()
 filetype plugin indent on
 syntax on
 
+" Always use Unicode
+set encoding=utf-8
+setglobal fileencoding=utf-8
+
 " Ensure that text is properly wrapped in comment; joining commented
 " lines concatenates the comments properly; and preexisting long lines are
 " never automatically wrapped.
@@ -126,7 +133,7 @@ endif
 set linebreak
 set nowrap " Really hate wrapping.
 set showbreak=»»»»
-set wrapmargin=1 " We'll put a special UTF-8 character to signify long lines.
+set wrapmargin=1 " We'll put a special character to signify long lines.
 set listchars=tab:⇥·,trail:␣,eol:¶,extends:⇉,precedes:⇇,nbsp:·
 
 " Searching stuff
