@@ -34,9 +34,7 @@ Plug 'dopefishh/vim-praat'
 Plug 'rhysd/vim-llvm'
 
 " Tim Pope awesomeness.
-Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dispatch', { 'on': 'Make' }
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
@@ -75,6 +73,8 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'eddieantonio/vim-preserve'
 Plug 'kshenoy/vim-signature'
 Plug 'chrisbra/unicode.vim'
+
+Plug 'eddieantonio/vim-nehiyawewin'
 
 " Erlang IDE
 Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
