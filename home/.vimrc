@@ -58,10 +58,9 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-speeddating'
 
-" Fuzzy file finder.
-if filereadable('/usr/local/opt/fzf')
+" Fuzzy file finder. Enable only if it is locally installed.
+if !empty(glob('/usr/local/opt/fzf'))
   Plug '/usr/local/opt/fzf'
-  Plug 'junegunn/fzf.vim'
 endif
 
 " Syntax errors and linters
@@ -101,8 +100,8 @@ Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
 
 " TypeScript IDE
 if !has('win32')
-Plug 'Shougo/vimproc.vim'  |
-  \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
+  Plug 'Shougo/vimproc.vim'  |
+    \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
 endif
 
 call plug#end()
