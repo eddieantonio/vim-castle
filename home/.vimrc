@@ -1,6 +1,18 @@
 " .vimrc
 " Author: Eddie Antonio Santos <easantos@ualberta.ca>
-" See also: .vim/plugins and .vim/after/plugins
+" See also: $VIMHOME/plugins and $VIMHOME/after/plugins
+
+" Set the VIMHOME variable appropriately
+" Adapted from: http://jens-na.github.io/2013/10/21/vim-home-as-variable/
+if has('win32') || has('win64')
+    if has('nvim')
+        let $VIMHOME = $LOCALAPPDATA."\\nvim"
+    else
+        let $VIMHOME = $HOME."\\vimfiles"
+    endif
+else
+    let $VIMHOME = $HOME."/.vim"
+endif
 
 " Automatically install vim-plug
 if !has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
@@ -10,7 +22,7 @@ if !has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " vim-plug first -- Relying on sensible.vim
-call plug#begin('~/.vim/plugged')
+call plug#begin($VIMHOME.'/plugged')
 
 " Colour schemes
 Plug 'junegunn/seoul256.vim'
@@ -47,8 +59,10 @@ Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-speeddating'
 
 " Fuzzy file finder.
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+if filereadable('/usr/local/opt/fzf')
+  Plug '/usr/local/opt/fzf'
+  Plug 'junegunn/fzf.vim'
+endif
 
 " Syntax errors and linters
 if v:version >= 800
@@ -86,8 +100,10 @@ Plug 'vim-erlang/vim-erlang-tags', { 'for': 'erlang' }
 Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
 
 " TypeScript IDE
+if !has('win32')
 Plug 'Shougo/vimproc.vim'  |
   \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
+endif
 
 call plug#end()
 
@@ -113,7 +129,7 @@ if &t_Co >= 256 || has("gui_running")
   "   Range:   233 (darkest) ~ 239 (lightest)
   "   Default: 237
   let g:seoul256_background = 235
-  colorscheme seoul256
+  silent! colorscheme seoul256
 endif
 
 " The default, but can use <Space> as an alias.
