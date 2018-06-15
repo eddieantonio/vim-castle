@@ -166,3 +166,8 @@ set titleold=""
 " Modeline stuff
 set modeline
 set modelines=5
+
+" XXX: Kitty does not support background color erase.
+if $TERM == 'xterm-kitty'
+  let &t_ut=''
+endif
