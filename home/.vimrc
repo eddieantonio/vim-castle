@@ -70,7 +70,7 @@ if v:version >= 800
 endif
 
 " Completion
-Plug 'ajh17/VimCompletesMe'
+Plug 'lifepillar/vim-mucomplete'
 
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
