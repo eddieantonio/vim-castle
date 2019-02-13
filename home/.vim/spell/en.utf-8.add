@@ -8,6 +8,7 @@ allomorphs
 allomorphy
 allophonemic
 Amaral
+animacy
 Antti
 API
 app
@@ -114,11 +115,14 @@ FireFox
 foo
 Freedman-Diaconis
 Frontend
+FST
+FSTs
 fusional
 Gamboge/=
 GDB
 geolocation
 GHTorrent
+Giellatekno
 Gigabit
 gimbal
 Gini index
@@ -166,6 +170,7 @@ ISSS
 iterable
 itty-bitty
 Itwêwina
+itwêwina
 JavaScript's/=
 JavaScript/=
 Jira
@@ -182,6 +187,7 @@ Kanto
 Karim
 katakana
 Keras
+Keyman
 Kieran
 Kneser-Ney
 Kolmogorov-Smirnov
@@ -201,12 +207,14 @@ lifecycles
 linter
 linting
 LiveBook
+LMLayer
 localhost
 localness
 lol/?
 LRU
 LSTM
 LSTMs
+Lubuntu
 Lucene
 LXC
 MacEwan/=
@@ -226,6 +234,7 @@ metadata
 MetaMap
 metaprogramming
 Metroid
+Metroidvania
 microservice
 microservices
 mirative
@@ -253,6 +262,7 @@ Near Realtime
 Neo4j
 NetHack
 NLP
+NNBSP
 Node.js/=
 npm/=
 NTP
@@ -321,12 +331,14 @@ Romansky
 ruleset
 runtimes
 Sabbat
+sandhi
 Scheffler's
 Schleifenbauer
 Schmidhuber
 semasiography
 semisiographic
 SemVer
+serializable
 servlet
 SHA-256
 SHA512
@@ -370,6 +382,9 @@ tokenization
 tokenizer
 TPC-B
 Trac
+transduce
+transliterator
+transliterators
 trifecta
 Tsung
 TypeScript/=
@@ -422,3 +437,4 @@ YouTube/=
 ZeroMQ
 Zipf
 Zipf's
+ᓀᐦᐃᔭᐍᐏᐣ
