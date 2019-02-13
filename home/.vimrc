@@ -47,6 +47,9 @@ Plug 'alunny/pegjs-vim', { 'for': ['pegjs'] }
 Plug 'maxbane/vim-asm_ca65', { 'for': 'asm_ca65' }
 Plug 'dopefishh/vim-praat'
 Plug 'rhysd/vim-llvm'
+Plug 'vim-scripts/lexctwolc-Syntax-Highlighter'
+Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'AndrewRadev/sideways.vim'
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-dispatch', { 'on': 'Make' }
@@ -57,10 +60,12 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-apathy'
 
 " Fuzzy file finder. Enable only if it is locally installed.
 if !empty(glob('/usr/local/opt/fzf'))
   Plug '/usr/local/opt/fzf'
+  Plug 'junegunn/fzf.vim'
 endif
 
 " Syntax errors and linters
@@ -80,7 +85,7 @@ Plug 'godlygeek/tabular'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
 Plug 'vim-airline/vim-airline'
-Plug 'ap/vim-css-color', { 'for': ['css', 'html'] }
+Plug 'andymass/vim-matchup'
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
 Plug 'michaeljsmith/vim-indent-object'
