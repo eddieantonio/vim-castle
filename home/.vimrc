@@ -94,6 +94,7 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'eddieantonio/vim-preserve'
 Plug 'kshenoy/vim-signature'
 Plug 'chrisbra/unicode.vim'
+Plug 'RRethy/vim-hexokinase'
 
 Plug 'eddieantonio/vim-nehiyawewin'
 
