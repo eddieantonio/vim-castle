@@ -363,6 +363,7 @@ SQLite3
 stdin
 stringly-typed
 Stroulia
+struct
 stylesheet
 subexpressions
 subsequences
@@ -383,6 +384,8 @@ tokenizer
 TPC-B
 Trac
 transduce
+transduction
+transductions
 transliterator
 transliterators
 trifecta
