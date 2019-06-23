@@ -28,28 +28,18 @@ call plug#begin($VIMHOME.'/plugged')
 Plug 'junegunn/seoul256.vim'
 
 " Languages
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
-Plug 'dag/vim2hs', { 'for': 'haskell' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'jakar/vim-json', { 'for': 'json' }
 Plug 'lervag/vimtex'
-Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
-Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
-Plug 'Omer/vim-sparql', { 'for': 'sparql' }
 Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
-Plug 'dylon/vim-antlr', { 'for': ['antlr4'] }
-Plug 'alunny/pegjs-vim', { 'for': ['pegjs'] }
-Plug 'maxbane/vim-asm_ca65', { 'for': 'asm_ca65' }
-Plug 'dopefishh/vim-praat'
 Plug 'rhysd/vim-llvm'
 Plug 'vim-scripts/lexctwolc-Syntax-Highlighter'
 Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'AndrewRadev/sideways.vim'
 Plug 'burner/vim-svelte'
 
 " Tim Pope awesomeness.
@@ -91,6 +81,7 @@ Plug 'andymass/vim-matchup'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'eddieantonio/vim-preserve'
+Plug 'AndrewRadev/sideways.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'AndrewRadev/splitjoin.vim'
@@ -106,12 +97,6 @@ Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
 Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
 Plug 'vim-erlang/vim-erlang-tags', { 'for': 'erlang' }
 Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
-
-" TypeScript IDE
-if !has('win32')
-  Plug 'Shougo/vimproc.vim'  |
-    \ Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'vim +VimProcInstall' }
-endif
 
 call plug#end()
 
