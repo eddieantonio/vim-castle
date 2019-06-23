@@ -50,6 +50,8 @@ Plug 'rhysd/vim-llvm'
 Plug 'vim-scripts/lexctwolc-Syntax-Highlighter'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'AndrewRadev/sideways.vim'
+Plug 'burner/vim-svelte'
+Plug 'RRethy/vim-illuminate'
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-dispatch', { 'on': 'Make' }
