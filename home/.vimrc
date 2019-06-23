@@ -51,7 +51,6 @@ Plug 'vim-scripts/lexctwolc-Syntax-Highlighter'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'burner/vim-svelte'
-Plug 'RRethy/vim-illuminate'
 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-dispatch', { 'on': 'Make' }
@@ -81,23 +80,25 @@ Plug 'lifepillar/vim-mucomplete'
 
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
-Plug 'scrooloose/nerdcommenter'
-Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
-Plug 'godlygeek/tabular'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
 Plug 'vim-airline/vim-airline'
-Plug 'andymass/vim-matchup'
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
+Plug 'RRethy/vim-hexokinase'
+Plug 'RRethy/vim-illuminate'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'antoyo/vim-licenses'
+Plug 'andymass/vim-matchup'
+Plug 'scrooloose/nerdcommenter'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'eddieantonio/vim-preserve'
 Plug 'kshenoy/vim-signature'
+Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'godlygeek/tabular'
+Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
 Plug 'chrisbra/unicode.vim'
-Plug 'RRethy/vim-hexokinase'
 
+" Type Cree syllabics using digraphs
 Plug 'eddieantonio/vim-nehiyawewin'
 
 " Erlang IDE
