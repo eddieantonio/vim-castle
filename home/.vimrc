@@ -87,6 +87,7 @@ Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
 Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
+Plug 'markonm/traces.vim'
 Plug 'chrisbra/unicode.vim'
 
 " Type Cree syllabics using digraphs
@@ -94,7 +95,6 @@ Plug 'eddieantonio/vim-nehiyawewin'
 
 " Erlang IDE
 Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
-Plug 'vim-erlang/vim-erlang-omnicomplete', { 'for': 'erlang' }
 Plug 'vim-erlang/vim-erlang-tags', { 'for': 'erlang' }
 Plug 'edkolev/erlang-motions.vim', { 'for': 'erlang' }
 
