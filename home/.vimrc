@@ -15,7 +15,6 @@ call plug#begin('~/.vim/plugged')
 " Colour scheme
 Plug 'aonemd/kuroi.vim'
 
-
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
