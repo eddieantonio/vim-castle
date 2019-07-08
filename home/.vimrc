@@ -1,18 +1,6 @@
 " .vimrc
 " Author: Eddie Antonio Santos <easantos@ualberta.ca>
-" See also: $VIMHOME/plugins and $VIMHOME/after/plugins
-
-" Set the VIMHOME variable appropriately
-" Adapted from: http://jens-na.github.io/2013/10/21/vim-home-as-variable/
-if has('win32') || has('win64')
-    if has('nvim')
-        let $VIMHOME = $LOCALAPPDATA."\\nvim"
-    else
-        let $VIMHOME = $HOME."\\vimfiles"
-    endif
-else
-    let $VIMHOME = $HOME."/.vim"
-endif
+" See also: .vim/plugins and .vim/after/plugins
 
 " Automatically install vim-plug
 if !has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
@@ -22,7 +10,7 @@ if !has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " vim-plug first -- Relying on sensible.vim
-call plug#begin($VIMHOME.'/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Colour scheme
 Plug 'aonemd/kuroi.vim'
