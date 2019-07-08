@@ -115,7 +115,13 @@ setglobal fileencoding=utf-8
 " See `:help fo-table` for more info on these options
 set formatoptions+=cl2j
 
+" Show the current normal mode command sequence in the corner of the screen.
 set showcmd
+
+" Enable true-colour mode in iTerm and Windows 10 terminal
+if $TERM_PROGRAM == 'iTerm.app' || has('vcon')
+  set termguicolors
+endif
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
