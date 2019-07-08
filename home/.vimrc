@@ -24,8 +24,9 @@ endif
 " vim-plug first -- Relying on sensible.vim
 call plug#begin($VIMHOME.'/plugged')
 
-" Colour schemes
-Plug 'junegunn/seoul256.vim'
+" Colour scheme
+Plug 'aonemd/kuroi.vim'
+
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -118,11 +119,8 @@ set showcmd
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  " seoul256 (dark):
-  "   Range:   233 (darkest) ~ 239 (lightest)
-  "   Default: 237
-  let g:seoul256_background = 235
-  silent! colorscheme seoul256
+  set background=dark
+  silent! colorscheme kuroi
 endif
 
 " The default, but can use <Space> as an alias.
