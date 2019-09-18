@@ -72,7 +72,7 @@ Plug 'eddieantonio/vim-preserve'
 Plug 'AndrewRadev/sideways.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'mhinz/vim-signify'
-Plug 'rstacruz/sparkup', { 'rtp': 'vim/' }
+Plug 'mattn/emmet-vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
 Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
