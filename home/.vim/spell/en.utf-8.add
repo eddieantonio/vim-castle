@@ -16,6 +16,7 @@ Apport
 apps
 AppVeyor
 arity
+Arok
 Arppe
 AST
 ASTs
@@ -229,6 +230,7 @@ Meena
 Mellotron
 memoizing
 Merr
+MESC
 MeSH
 metadata
 MetaMap
@@ -318,7 +320,6 @@ RAPL
 RDBMS
 RDF
 Redis
-redistributable/?
 refactor
 refactored
 repo
@@ -432,6 +433,7 @@ Wikipedia
 Wilcoxon
 Wilk
 Witterick
+Wolvengrey
 wordform
 WordPress/=
 workflow
