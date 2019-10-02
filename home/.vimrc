@@ -13,7 +13,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Colour scheme
-Plug 'aonemd/kuroi.vim'
+Plug 'flrnprz/candid.vim'
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -114,7 +114,7 @@ endif
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
   set background=dark
-  silent! colorscheme kuroi
+  silent! colorscheme candid
 endif
 
 " The default, but can use <Space> as an alias.
