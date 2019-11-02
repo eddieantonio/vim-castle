@@ -32,6 +32,7 @@ Bambara
 Barasano
 Barbosa
 basically/?
+BCP 47
 Behat
 Bicho
 bigrams
@@ -50,6 +51,7 @@ chamberlin
 chiptune
 Chowdhury
 Christy
+chuchitos
 CircleCI
 circumfix
 clearfix
@@ -127,7 +129,9 @@ Gigabit
 gimbal
 Gini index
 GitHub
+Glottolog
 GloZell/=
+goliaths
 GPS
 Gradle
 graphemes
@@ -271,6 +275,7 @@ npm/=
 NTP
 Nvidia
 nêhiyawêwin
+obviative
 obviously/?
 of course/?
 Ogham
@@ -311,6 +316,8 @@ Proth
 pseudocode
 psuedorandom
 Punycode
+pupusa
+pupusas
 quantifiably/?
 QUnit
 rackmount
@@ -334,6 +341,7 @@ RNNs
 Romansky
 ruleset
 runtimes
+Saanich
 Sabbat
 sandhi
 Scheffler's
@@ -373,6 +381,7 @@ struct
 stylesheet
 subexpressions
 subsequences
+subtag
 suppletion
 surjective
 surprisal
@@ -403,6 +412,7 @@ UCOSP
 UI
 UML
 UMLS
+UN M49
 unigram
 unigrams
 UnionFS
@@ -439,6 +449,7 @@ WordPress/=
 workflow
 WSGI
 Wyvern
+W̱SÁNEĆ
 Xen
 Xeon
 XMLHttpRequest/=
