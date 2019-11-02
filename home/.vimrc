@@ -59,6 +59,7 @@ Plug 'lifepillar/vim-mucomplete'
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
 Plug 'vim-airline/vim-airline'
+Plug 'eddieantonio/vim-center'
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
 Plug 'RRethy/vim-hexokinase'

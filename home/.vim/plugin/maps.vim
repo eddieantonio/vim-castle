@@ -114,3 +114,6 @@ endfunction
 " ALE: Wrap between different errors.
 nmap <C-p> <Plug>(ale_previous_wrap)
 nmap <C-n> <Plug>(ale_next_wrap)
+
+" vim-center:
+nmap <Leader>ch :CenterHeading<CR>
