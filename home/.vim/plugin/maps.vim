@@ -117,3 +117,6 @@ nmap <C-n> <Plug>(ale_next_wrap)
 
 " vim-center:
 nmap <Leader>ch :CenterHeading<CR>
+
+" ====== Abbreviations =======
+abbreviate :shrug: ¯\_(ツ)_/¯
