@@ -5,13 +5,13 @@
 " Configure enabled linters; some of the available linters are *profoundly*
 " annoying.
 let g:ale_linters = {
-  \ 'python': ['mypy', 'pycodestyle', 'isort'],
+  \ 'python': ['mypy', 'black', 'isort'],
   \ 'latex': ['chktex'],
   \ 'tex': ['chktex'],
   \ }
 
 let g:ale_fixers = {
-  \ 'python': ['autopep8', 'isort']
+  \ 'python': ['isort', 'black']
   \ }
 
 " Theses are the directory names I use for virtualenvs.
