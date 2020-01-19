@@ -79,6 +79,7 @@ Plug 'godlygeek/tabular'
 Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
 Plug 'markonm/traces.vim'
 Plug 'chrisbra/unicode.vim'
+Plug 'junegunn/vader.vim'
 
 " Type Cree syllabics using digraphs
 Plug 'eddieantonio/vim-nehiyawewin'
