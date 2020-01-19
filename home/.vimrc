@@ -50,7 +50,7 @@ endif
 " Syntax errors and linters
 if v:version >= 800
   " Works only in Vim 8+ and NeoVim
-  Plug 'w0rp/ale'
+  Plug 'dense-analysis/ale'
 endif
 
 " Completion
