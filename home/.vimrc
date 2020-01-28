@@ -28,8 +28,9 @@ Plug 'Quramy/vim-js-pretty-template', { 'for': ['javascript', 'typescript'] }
 Plug 'rhysd/vim-llvm'
 Plug 'vim-scripts/lexctwolc-Syntax-Highlighter'
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'cespare/vim-toml'
 Plug 'burner/vim-svelte'
-
+ 
 " Tim Pope awesomeness.
 Plug 'tpope/vim-dispatch', { 'on': 'Make' }
 Plug 'tpope/vim-repeat'
