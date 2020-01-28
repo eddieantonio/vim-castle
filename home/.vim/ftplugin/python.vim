@@ -5,7 +5,7 @@
 " First, type-check, then style check:
 let b:ale_linters = ['mypy', 'black']
 " First, sort imports, then fix style.
-let b:ale_fixers = ['isort', 'black']
+let b:ale_fixers = ['isort', 'black', 'trim_whitespace']
 
 
 " Theses are the directory names I use for virtualenvs.
