@@ -81,6 +81,7 @@ Plug 'wincent/terminus'  " Automatic cursor shape and bracketed paste mode!
 Plug 'markonm/traces.vim'
 Plug 'chrisbra/unicode.vim'
 Plug 'junegunn/vader.vim'
+Plug 'glts/vim-radical' | Plug 'glts/vim-magnum'
 
 " Type Cree syllabics using digraphs
 Plug 'eddieantonio/vim-nehiyawewin'
