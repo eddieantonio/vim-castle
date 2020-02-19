@@ -15,3 +15,7 @@ let b:ale_virtualenv_dir_names = ['.env', '.pyenv', 'venv', 'virtualenv']
 let b:ale_sign_column_always = 1
 
 autocmd BufWrite *.py ALEFix
+
+" Doge -- documentation generator
+" https://github.com/kkoomen/vim-doge#configuration
+let g:doge_doc_standard_python = 'sphinx'
