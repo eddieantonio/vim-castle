@@ -82,6 +82,7 @@ Plug 'markonm/traces.vim'
 Plug 'chrisbra/unicode.vim'
 Plug 'junegunn/vader.vim'
 Plug 'glts/vim-radical' | Plug 'glts/vim-magnum'
+Plug 'janko/vim-test'
 
 " Type Cree syllabics using digraphs
 Plug 'eddieantonio/vim-nehiyawewin'
