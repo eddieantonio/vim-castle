@@ -84,6 +84,7 @@ Plug 'junegunn/vader.vim'
 Plug 'glts/vim-radical' | Plug 'glts/vim-magnum'
 Plug 'machakann/vim-highlightedyank'
 Plug 'kkoomen/vim-doge'
+Plug 'janko/vim-test'
 
 " Type Cree syllabics using digraphs
 Plug 'eddieantonio/vim-nehiyawewin'
