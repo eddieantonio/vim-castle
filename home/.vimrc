@@ -13,7 +13,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Colour scheme
-Plug 'flrnprz/candid.vim'
+Plug 'rhysd/vim-color-spring-night'
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -30,7 +30,7 @@ Plug 'vim-scripts/lexctwolc-Syntax-Highlighter'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'cespare/vim-toml'
 Plug 'burner/vim-svelte'
- 
+
 " Tim Pope awesomeness.
 Plug 'tpope/vim-dispatch', { 'on': 'Make' }
 Plug 'tpope/vim-repeat'
@@ -120,8 +120,8 @@ endif
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  set background=dark
-  silent! colorscheme candid
+  silent! colorscheme spring-night
+  let g:airline_theme = 'spring_night'
 endif
 
 " The default, but can use <Space> as an alias.
