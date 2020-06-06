@@ -23,6 +23,8 @@ nnoremap Y y$
 nnoremap <Leader><Tab> :GFiles<CR>
 nnoremap <Leader><S-Tab> :Files<CR>
 
+" python-imports.vim
+nnoremap yoi :ImportName<CR>
 
 " Easy split navigation
 nnoremap <C-h> <C-w>h
