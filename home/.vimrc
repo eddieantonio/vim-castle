@@ -60,6 +60,7 @@ Plug 'lifepillar/vim-mucomplete'
 " Other.
 Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp'] }
 Plug 'vim-airline/vim-airline'
+Plug 'haya14busa/vim-asterisk'
 Plug 'eddieantonio/vim-center'
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
@@ -71,6 +72,7 @@ Plug 'andymass/vim-matchup'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'eddieantonio/vim-preserve'
+Plug 'mgedmin/python-imports.vim', { 'for': ['python'] }
 Plug 'AndrewRadev/sideways.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'mhinz/vim-signify'
@@ -83,7 +85,7 @@ Plug 'chrisbra/unicode.vim'
 Plug 'junegunn/vader.vim'
 Plug 'glts/vim-radical' | Plug 'glts/vim-magnum'
 Plug 'machakann/vim-highlightedyank'
-Plug 'kkoomen/vim-doge'
+Plug 'kkoomen/vim-doge', { 'for': ['python'] }
 Plug 'janko/vim-test'
 Plug 'wellle/targets.vim'
 
