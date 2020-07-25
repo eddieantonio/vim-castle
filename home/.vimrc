@@ -88,6 +88,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'kkoomen/vim-doge', { 'for': ['python'] }
 Plug 'janko/vim-test'
 Plug 'wellle/targets.vim'
+Plug 'pechorin/any-jump.vim'
 
 " Type Cree syllabics using digraphs
 Plug 'eddieantonio/vim-nehiyawewin'
