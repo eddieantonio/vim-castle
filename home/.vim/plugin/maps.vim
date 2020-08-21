@@ -120,5 +120,8 @@ nmap <C-n> <Plug>(ale_next_wrap)
 " vim-center:
 nmap <Leader>ch <Plug>(center-heading)
 
+" vim-emmet
+imap <C-e> <Plug>(emmet-expand-abbr)
+
 " ====== Abbreviations =======
 abbreviate :shrug: ¯\_(ツ)_/¯
