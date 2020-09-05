@@ -118,12 +118,15 @@ set formatoptions+=cl2j
 set showcmd
 
 " Enable true-colour mode in iTerm and Windows 10 terminal
-if $TERM_PROGRAM == 'iTerm.app' || has('vcon')
+if has('termguicolors') || has('vcon')
+  let $t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let $t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
+  let g:spring_night_cterm_italic=1
   silent! colorscheme spring-night
   let g:airline_theme = 'spring_night'
 endif
