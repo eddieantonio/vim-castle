@@ -13,7 +13,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Colour scheme
-Plug 'rhysd/vim-color-spring-night'
+Plug 'danilo-augusto/vim-afterglow'
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -124,8 +124,10 @@ endif
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  silent! colorscheme spring-night
-  let g:airline_theme = 'spring_night'
+  let g:afterglow_italic_comments=1
+  let g:afterglow_inherit_background=1
+  silent! colorscheme afterglow
+  let g:airline_theme = 'afterglow'
 endif
 
 " The default, but can use <Space> as an alias.
