@@ -30,3 +30,8 @@ let b:ale_virtualenv_dir_names = ['.env', '.pyenv', 'venv', 'virtualenv']
 
 " Always show the sign column in Python files.
 let b:ale_sign_column_always = 1
+
+""""""""""""""""""""""""""""""""" C settings """""""""""""""""""""""""""""""""
+
+" Use make --always-make
+let g:ale_c_always_make = 1

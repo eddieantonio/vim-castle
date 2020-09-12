@@ -12,6 +12,9 @@ endif
 " vim-plug first -- Relying on sensible.vim
 call plug#begin('~/.vim/plugged')
 
+" Get help for vim-plug
+Plug 'junegunn/vim-plug'
+
 " Colour scheme
 Plug 'rhysd/vim-color-spring-night'
 
