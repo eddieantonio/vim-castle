@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
 
 " Colour scheme
-Plug 'rhysd/vim-color-spring-night'
+Plug 'sts10/vim-pink-moon'
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -131,9 +131,7 @@ endif
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  let g:spring_night_cterm_italic=1
-  silent! colorscheme spring-night
-  let g:airline_theme = 'spring_night'
+  colorscheme pink-moon
 endif
 
 " The default, but can use <Space> as an alias.
