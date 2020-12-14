@@ -93,6 +93,8 @@ Plug 'janko/vim-test'
 Plug 'wellle/targets.vim'
 Plug 'pechorin/any-jump.vim'
 
+Plug 'vim-scripts/SyntaxRange' | Plug 'vim-scripts/ingo-library'
+
 " Type Cree syllabics using digraphs
 Plug 'eddieantonio/vim-nehiyawewin'
 
