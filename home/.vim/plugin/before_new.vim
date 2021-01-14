@@ -32,7 +32,6 @@ autocmd BufNewFile *.{erl} call <SID>erl_new_module()
 function! s:py_new_module()
   let shebang = "#!/usr/bin/env python3"
   execute "normal! i" . shebang
-  execute "normal! o" . "# -*- coding: UTF-8 -*-"
   execute "normal! o\r"
   normal! G
 endfunction
