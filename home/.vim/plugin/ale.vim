@@ -13,14 +13,15 @@ let g:ale_linters = {
   \ }
 
 let g:ale_fixers = {
-  \ 'javascript': ['prettier', 'trim_whitespace'],
+  \ 'javascript': ['prettier'],
   \ 'python': ['isort', 'black', 'trim_whitespace'],
-  \ 'typescript': ['eslint', 'prettier'],
+  \ 'rust': ['rustfmt'],
   \ 'svelte': ['eslint', 'prettier'],
+  \ 'typescript': ['eslint', 'prettier'],
   \ }
 
-" Run eslint --fix on save of JavaScript and Python files
-autocmd BufWrite *.js,*.py,*.ts ALEFix
+" Run eslint --fix on save of certain file types
+autocmd BufWrite *.js,*.py,*.ts,*.rs ALEFix
 
 " Experiment with ALE configuration
 let g:ale_sign_error = '🚫'
