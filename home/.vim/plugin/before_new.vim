@@ -24,15 +24,3 @@ function! s:erl_new_module()
   normal! G
 endfunction
 autocmd BufNewFile *.{erl} call <SID>erl_new_module()
-
-
-" For Python files:
-" Automatically insert Python preamble.
-" http://vim.wikia.com/wiki/Automatic_insertion_of_C/C%2B%2B_header_gates
-function! s:py_new_module()
-  let shebang = "#!/usr/bin/env python3"
-  execute "normal! i" . shebang
-  execute "normal! o\r"
-  normal! G
-endfunction
-autocmd BufNewFile *.py call <SID>py_new_module()
