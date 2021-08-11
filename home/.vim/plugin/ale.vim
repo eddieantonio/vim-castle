@@ -8,13 +8,15 @@ let g:ale_linters = {
   \ 'latex': ['chktex'],
   \ 'tex': ['chktex'],
   \ 'javascript': ['eslint'],
+  \ 'svelte': ['eslint'],
   \ 'python': ['mypy', 'black'],
   \ }
 
 let g:ale_fixers = {
-  \ 'javascript': ['eslint', 'trim_whitespace'],
+  \ 'javascript': ['prettier', 'trim_whitespace'],
   \ 'python': ['isort', 'black', 'trim_whitespace'],
   \ 'typescript': ['eslint', 'prettier'],
+  \ 'svelte': ['eslint', 'prettier'],
   \ }
 
 " Run eslint --fix on save of JavaScript and Python files
