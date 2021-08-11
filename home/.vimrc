@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
 
 " Colour scheme
-Plug 'sts10/vim-pink-moon'
+Plug 'nanotech/jellybeans.vim'
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -132,7 +132,8 @@ endif
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  colorscheme pink-moon
+  colorscheme jellybeans
+  let g:jellybeans_use_term_italics = 1
 endif
 
 " The default, but can use <Space> as an alias.
