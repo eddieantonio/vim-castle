@@ -94,6 +94,8 @@ Plug 'wellle/targets.vim'
 Plug 'pechorin/any-jump.vim'
 Plug 'unblevable/quick-scope'
 
+Plug 'wellle/context.vim'
+
 Plug 'vim-scripts/SyntaxRange' | Plug 'vim-scripts/ingo-library'
 
 " Type Cree syllabics using digraphs
