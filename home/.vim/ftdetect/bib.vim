@@ -1,2 +1,2 @@
-" Autodetect tsv files.
+" Autodetect .bibtex files.
 au BufRead,BufNewFile *.bibtex set filetype=bib
