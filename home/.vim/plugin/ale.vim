@@ -39,3 +39,10 @@ let b:ale_sign_column_always = 1
 
 " Use make --always-make
 let g:ale_c_always_make = 1
+
+""""""""""""""""""""""""""""""" Rust settings """"""""""""""""""""""""""""""""
+
+" use --test when running cargo check (reports errors in test cases!)
+let g:ale_rust_cargo_check_tests = 1
+" use cargo clippy, but only when it's installed!
+let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
