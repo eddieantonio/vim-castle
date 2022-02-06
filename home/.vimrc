@@ -46,16 +46,24 @@ Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-apathy'
 
 " Fuzzy file finder. Enable only if it is locally installed.
+let s:fzf_installed = 0
 if !empty(glob('/usr/local/opt/fzf'))
+  let s:fzf_installed = 1
   Plug '/usr/local/opt/fzf'
+elseif !empty(glob('/opt/homebrew/opt/fzf'))
+  let s:fzf_installed = 1
+  set rtp+=/opt/homebrew/opt/fzf
+endif
+
+" TODO: There's a better way to install this
+" See: https://github.com/junegunn/fzf.vim
+if s:fzf_installed
   Plug 'junegunn/fzf.vim'
 endif
 
 " Syntax errors and linters
-if v:version >= 800
-  " Works only in Vim 8+ and NeoVim
-  Plug 'dense-analysis/ale'
-endif
+" Works only in Vim 8+ and NeoVim
+Plug 'dense-analysis/ale'
 
 " Completion
 Plug 'lifepillar/vim-mucomplete'
