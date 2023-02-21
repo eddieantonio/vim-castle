@@ -1,14 +1,14 @@
 " Setup Vim for freewriting/inkshedding.
-" 
+"
 " Inkshedding is the first step of my writing process. This involves two
 " steps:
 "  1. Absorbing some sort of information
-"  2. Immediately begin reflecting on the information through freewriting 
+"  2. Immediately begin reflecting on the information through freewriting
 "
 " The goal is to commit the raw, unedited mental thought process on to a
 " permanent medium. Things that gunk up the stream of conciousness include:
 "  - attempting to edit the writing
-"  - seeing the red underlying of spellcheck 
+"  - seeing the red underlying of spellcheck
 "
 " This filetype aims to turns off distractors, clearing the way for thoughts
 " to be typed into an editor.  Typically, this freewriting is then taken and
@@ -24,3 +24,8 @@ setlocal nocindent
 
 " You should not backspace in freewriting!
 inoremap <buffer> <BS> <Nop>
+
+" Disable the mouse in insert mode:
+if &mouse =~ 'a'
+  setlocal mouse=nvc
+endif
