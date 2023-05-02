@@ -10,6 +10,7 @@ let g:ale_linters = {
   \ 'javascript': ['eslint'],
   \ 'svelte': ['eslint'],
   \ 'python': ['mypy', 'black'],
+  \ 'json': [],
   \ }
 
 let g:ale_fixers = {

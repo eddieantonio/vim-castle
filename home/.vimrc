@@ -9,6 +9,14 @@ if !has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+if $DEMO_ENVIRONMENT == 1
+  set runtimepath=/usr/share/vim/vimfiles,/usr/share/vim/vim90,/usr/share/vim/vimfiles/after
+  set nocompatible
+  filetype plugin indent on
+  syntax enable
+  finish
+endif
+
 " vim-plug first -- Relying on sensible.vim
 call plug#begin('~/.vim/plugged')
 
