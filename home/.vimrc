@@ -23,8 +23,8 @@ call plug#begin('~/.vim/plugged')
 " Get help for vim-plug
 Plug 'junegunn/vim-plug'
 
-" Colour scheme
-Plug 'nanotech/jellybeans.vim'
+" Colour scheme (requires ruby, make)
+Plug 'sthendev/mariana.vim', { 'do': 'make' }
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -150,8 +150,7 @@ endif
 
 " Use my awesome colorscheme for 256 colors and GVim or whatever.
 if &t_Co >= 256 || has("gui_running")
-  colorscheme jellybeans
-  let g:jellybeans_use_term_italics = 1
+  colorscheme mariana
 endif
 
 " The default, but can use <Space> as an alias.
