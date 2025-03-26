@@ -24,7 +24,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
 
 " Colour scheme (requires ruby, make)
-Plug 'sthendev/mariana.vim', { 'do': 'make' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -140,14 +140,11 @@ set showcmd
 
 " Enable true-colour mode in iTerm and Windows 10 terminal
 if has('termguicolors') || has('vcon')
-  let $t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let $t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
-" Use my awesome colorscheme for 256 colors and GVim or whatever.
-if &t_Co >= 256 || has("gui_running")
-  colorscheme mariana
+if has('termguicolors')
+  colorscheme catppuccin_latte
 endif
 
 " The default, but can use <Space> as an alias.
