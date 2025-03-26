@@ -19,7 +19,7 @@ vnoremap > >gv
 " and U Quickly go to salvage it?
 nnoremap Y y$
 
-" fzf TODO: extract into its own file.
+" fzf: extract into its own file.
 nnoremap <Leader><Tab> :GFiles<CR>
 nnoremap <Leader><S-Tab> :Files<CR>
 
@@ -53,11 +53,11 @@ nnoremap dsc gd[{V%::s/<C-R>///gc<Left><Left><Left>
 " Save on <Leader> w
 nnoremap <Leader>w :w<CR>
 
-" (In OS X) Opens the current file in the default application.
+" (macOS) Opens the current file in the default application.
 nnoremap <Leader>o :!open %<CR><CR>
-" (In OS X) Allows me to choose what to open.
+" (macOS) Allows me to choose what to open.
 nnoremap <Leader>O :!open<SPACE>
-" (In OS X) Opens the current working directory in Finder.
+" (macOS) Opens the current working directory in Finder.
 nnoremap <silent> <Leader><C-O> :!open .<CR><CR>
 
 " Vim-Dispatch, I guess...
@@ -122,6 +122,11 @@ nmap <Leader>ch <Plug>(center-heading)
 
 " vim-emmet
 imap <C-e> <Plug>(emmet-expand-abbr)
+
+" matt convinced me that backspace in normal mode is useless, so I have it
+" remapped to CTRL-^, because that's such a weird keypress for such a useful
+" command (go to alternate file).
+noremap <BS> <C-^>
 
 " ====== Abbreviations =======
 abbreviate :shrug: ¯\_(ツ)_/¯

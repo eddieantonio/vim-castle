@@ -21,7 +21,7 @@ let g:ale_fixers = {
   \ 'typescript': ['eslint', 'prettier'],
   \ }
 
-" Run eslint --fix on save of certain file types
+" Fix on save for certain file types
 autocmd BufWrite *.js,*.py,*.ts,*.rs ALEFix
 
 " Experiment with ALE configuration
