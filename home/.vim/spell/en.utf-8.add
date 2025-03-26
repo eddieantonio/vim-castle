@@ -1,6 +1,11 @@
 2 chainz
+AArch64
+abjad
+abugida
 ad hoc
 affixation
+AIC
+Akaike
 Allamanis
 allomorph
 allomorphic
@@ -10,6 +15,7 @@ allophonemic
 Amaral
 and
 animacy
+ANOVA
 Antti
 API
 app
@@ -19,6 +25,7 @@ AppVeyor
 arity
 Arok
 Arppe
+arXiv
 AST
 ASTs
 Atticus
@@ -36,6 +43,8 @@ Barbosa
 basically/?
 BCP 47
 Behat
+Belfield
+BibTeX
 Bicho
 bigrams
 BioWare
@@ -50,6 +59,7 @@ Caley
 callables
 Canonical's/=
 chamberlin
+ChatGPT
 chiptune
 Chowdhury
 Christy
@@ -68,9 +78,13 @@ codebase
 CodePen
 CoffeeScript
 commit's
+CompEd
 conjugators
+const/!
 correlational
+CPython
 cromulent
+CS1
 CSC
 CSS
 D3
@@ -131,7 +145,7 @@ FireFox
 FirstVoices
 foo
 Freedman-Diaconis
-Frontend
+frontend
 FST
 FSTs
 fusional
@@ -146,10 +160,13 @@ Gigabit
 gimbal
 Gini index
 GitHub
+GitLab
 Glottolog
 GloZell/=
 goliaths
 GPS
+GPT
+GPT-4
 Gradle
 Gramble
 graphemes
@@ -182,6 +199,7 @@ hypervisor
 hypervisors
 ICMP
 IDE
+IEEE Xplore
 IndexedDB
 IndexedDB's
 initialisms
@@ -189,6 +207,7 @@ inksheds
 inline
 IntelliJ
 interprocedural
+Ioannis
 IPv4
 IPv6
 Isabell/?
@@ -210,6 +229,7 @@ JSDoc
 JSON
 JSX
 just/?
+Jython
 Kalen
 kanbun
 kanji
@@ -236,20 +256,27 @@ Levenshtein
 lexer
 lexing
 lifecycles
+Likert
 linter
 linting
 Littell
 LiveBook
+LLM
+LLMs
 LMLayer
 localhost
 localness
+logographic
 lol/?
 LRU
 LSTM
 LSTMs
+Lua
 Lubuntu
 Lucene
 LXC
+M1
+MacBook
 MacEwan/=
 macOS/=
 macroclass
@@ -265,6 +292,7 @@ memoizing
 Merr
 MESC
 MeSH
+metacognition
 metadata
 MetaMap
 metaprogramming
@@ -274,6 +302,7 @@ Michif
 microservice
 microservices
 mirative
+mispredict
 Mitacs
 MITLM
 mixin
@@ -281,6 +310,7 @@ MLA
 mockups
 MongoDB
 monophthong
+monospaced
 moraic
 morphograms
 morphographic
@@ -300,6 +330,7 @@ naïve
 Near Realtime
 Neo4j
 NetHack
+Netsoc
 Nginx
 NLP
 NNBSP
@@ -307,12 +338,15 @@ Node.js/=
 Noto
 npm/=
 NTP
+NumPy
 Nvidia
 nêhiyawêwin
 obviative
 obviously/?
 of course/?
 Ogham
+OpenAI
+OpenJDK
 OpenJDK's
 OpenShift
 OpenSSH
@@ -327,8 +361,11 @@ PaaS
 Pandoc
 parsable
 PartyCrasher
+passwordless
 pathfinding
 PEG.js
+PEM
+PEMs
 per se
 perceptron
 pgbench
@@ -336,17 +373,21 @@ PHP
 phở
 Piaroa
 pictograms
+PNG
 Pokémon/=
 polyfill
 polysynthetic
 POSIX
+post hoc
 PostgreSQL
 PowerEdge
 PowerPoint
+Prajish
 preverbs
 pro bono
 proactively
 programmatically
+ProgSnap2
 Project Lambdu
 Proth
 pseudocode
@@ -356,6 +397,7 @@ pupusa
 pupusas
 PyCharm
 quantifiably/?
+Quille
 QUnit
 rackmount
 Rafiei
@@ -366,6 +408,7 @@ RDF
 Redis
 refactor
 refactored
+REPL
 repo
 RESTful
 ReStructured Text/=
@@ -378,6 +421,7 @@ RNNs
 Romansky
 ruleset
 runtimes
+Rustacean
 Saanich
 Sabbat
 sandhi
@@ -386,6 +430,7 @@ Scheffler's
 Schleifenbauer
 Schmidhuber
 Schmirler
+screencasts
 semasiography
 semisiographic
 SemVer
@@ -415,6 +460,7 @@ SpiderMonkey
 SQLite
 SQLite3
 stdin
+str
 stringly-typed
 Stroulia
 struct
@@ -433,6 +479,7 @@ TextEdit
 tf·idf
 Theano
 thresholding
+TigerJython
 timestamp
 tnetennba
 tokenization
@@ -454,6 +501,7 @@ UCAS
 UCD
 UCOSP
 UI
+UKICER
 UML
 UMLS
 UN M49
