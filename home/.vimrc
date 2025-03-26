@@ -23,8 +23,8 @@ call plug#begin('~/.vim/plugged')
 " Get help for vim-plug
 Plug 'junegunn/vim-plug'
 
-" Colour scheme (requires ruby, make)
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+" Colourscheme (nice light and dark mode!)
+Plug 'vimpostor/vim-prism'
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
@@ -112,6 +112,9 @@ Plug 'unblevable/quick-scope'
 Plug 'vim-scripts/dbext.vim'
 Plug 'wellle/context.vim'
 
+" Autoswitch colourscheme for dark/light. Potentially obsolete with neovim...
+Plug 'vimpostor/vim-lumen'
+
 Plug 'vim-scripts/SyntaxRange' | Plug 'vim-scripts/ingo-library'
 
 " Erlang IDE
@@ -144,7 +147,7 @@ if has('termguicolors') || has('vcon')
 endif
 
 if has('termguicolors')
-  colorscheme catppuccin_latte
+  colorscheme prism
 endif
 
 " The default, but can use <Space> as an alias.
