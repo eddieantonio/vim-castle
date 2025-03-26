@@ -109,13 +109,10 @@ Plug 'janko/vim-test'
 Plug 'wellle/targets.vim'
 Plug 'pechorin/any-jump.vim'
 Plug 'unblevable/quick-scope'
-
+Plug 'vim-scripts/dbext.vim'
 Plug 'wellle/context.vim'
 
 Plug 'vim-scripts/SyntaxRange' | Plug 'vim-scripts/ingo-library'
-
-" Type Cree syllabics using digraphs
-Plug 'eddieantonio/vim-nehiyawewin'
 
 " Erlang IDE
 Plug 'vim-erlang/vim-erlang-compiler', { 'for': 'erlang' }
@@ -169,6 +166,8 @@ endif
 " Per-project .vimrc
 set exrc
 set secure
+
+packadd editorconfig
 
 " Wrapping junk:
 set linebreak
