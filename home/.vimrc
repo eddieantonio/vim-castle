@@ -146,6 +146,13 @@ if has('termguicolors') || has('vcon')
   set termguicolors
 endif
 
+" Hack to enable undercurls (squiggly underlining) in ghostty:
+" See: https://github.com/vim/vim/issues/6174#issuecomment-636869793
+if $TERM == "xterm-ghostty"
+  let &t_Cs = "\e[4:3m"
+  let &t_Ce = "\e[4:0m"
+endif
+
 if has('termguicolors')
   colorscheme prism
 endif
