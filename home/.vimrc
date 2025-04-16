@@ -198,3 +198,9 @@ set titleold=""
 " Modeline stuff
 set modeline
 set modelines=5
+
+" Yank into the system clipboard by default
+" https://jvns.ca/til/vim-osc52/
+if has('clipboard')
+  set clipboard=unnamed
+endif
