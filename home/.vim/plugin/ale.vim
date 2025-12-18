@@ -9,7 +9,7 @@ let g:ale_linters = {
   \ 'tex': ['chktex'],
   \ 'javascript': ['eslint'],
   \ 'svelte': ['eslint'],
-  \ 'python': ['mypy', 'black'],
+  \ 'python': ['mypy', 'black', 'flake8'],
   \ 'json': [],
   \ }
 
@@ -31,7 +31,7 @@ let g:ale_sign_warning = '⚠️'
 """""""""""""""""""""""""""""" Python settings """""""""""""""""""""""""""""""
 
 " Theses are the directory names I use for virtualenvs.
-let b:ale_virtualenv_dir_names = ['.env', '.pyenv', 'venv', 'virtualenv']
+let b:ale_virtualenv_dir_names = ['.env', '.venv', 'venv']
 
 " Always show the sign column in Python files.
 let b:ale_sign_column_always = 1

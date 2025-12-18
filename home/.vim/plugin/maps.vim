@@ -19,22 +19,18 @@ vnoremap > >gv
 " and U Quickly go to salvage it?
 nnoremap Y y$
 
-" fzf: extract into its own file.
+" fzf
 nnoremap <Leader><Tab> :GFiles<CR>
 nnoremap <Leader><S-Tab> :Files<CR>
 
 " python-imports.vim
-nnoremap yoi :ImportName<CR>
+nnoremap yoi :ImportName!<CR>
 
 " Easy split navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Yank to the operating system clipboard (normal mode and visual mode):
-nnoremap <C-y> "+y
-vnoremap <C-y> "+y
 
 " Hide highlighting with enter
 nnoremap <silent> <CR> :nohlsearch<CR>
@@ -43,12 +39,6 @@ nnoremap <silent> <CR> :nohlsearch<CR>
 nnoremap dr :%s/\<<C-r><C-w>\>//g<Left><Left>
 " Search and [c]hange word under cursor
 nnoremap dc :%s/\<<C-r><C-w>\>//g<Left><Left><C-r><C-w>
-
-" (from http://stackoverflow.com/a/597932)
-" Search and ([s]cope) [r]eplace word under cursor
-nnoremap dsr gd[{V%::s/<C-R>///gc<Left><Left><Left>
-" Search and ([s]cope) [c]hange word under cursor
-nnoremap dsc gd[{V%::s/<C-R>///gc<Left><Left><Left>
 
 " Save on <Leader> w
 nnoremap <Leader>w :w<CR>
@@ -83,13 +73,10 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-" Toggle Git Gutter.
-nnoremap cog :GitGutterToggle<CR>
-
 " Toggle vim-signatures (shows marks).
 nnoremap com :SignatureToggle<CR>
 
-" Toggle vim-signatures (shows marks).
+" Toggle vim-tagbar
 nnoremap cot :TagbarToggle<CR>
 
 " When I want 2-space tabs!

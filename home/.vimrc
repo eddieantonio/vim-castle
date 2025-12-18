@@ -25,13 +25,13 @@ Plug 'junegunn/vim-plug'
 
 " Colourscheme (nice light and dark mode!)
 Plug 'vimpostor/vim-prism'
+Plug 'tssm/fairyfloss.vim'
 
 " Languages
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' } | Plug 'mxw/vim-jsx'
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'jakar/vim-json', { 'for': 'json' }
 Plug 'lervag/vimtex'
-Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'StanAngeloff/php.vim', { 'for': 'php' }
 Plug 'wannesm/wmgraphviz.vim', { 'for': 'dot'}
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
