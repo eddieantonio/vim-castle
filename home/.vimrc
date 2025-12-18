@@ -23,8 +23,7 @@ call plug#begin('~/.vim/plugged')
 " Get help for vim-plug
 Plug 'junegunn/vim-plug'
 
-" Colourscheme (nice light and dark mode!)
-Plug 'vimpostor/vim-prism'
+" I installed this as a joke, but it unironically works well in dark/light mode
 Plug 'tssm/fairyfloss.vim'
 
 " Languages
@@ -154,7 +153,7 @@ if $TERM == "xterm-ghostty"
 endif
 
 if has('termguicolors')
-  colorscheme prism
+  colorscheme fairyfloss
 endif
 
 " The default, but can use <Space> as an alias.
