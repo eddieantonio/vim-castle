@@ -1,0 +1,5 @@
+# Undo files (honestly, they should not even be in this repo):
+home/.vim/undo/
+
+# Compiled spelling files
+*.spl
