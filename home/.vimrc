@@ -9,9 +9,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" ==========================================================================
-" Plugins                                                                {{{
-" ==========================================================================
+" Plugins ============================================================== {{{
 call plug#begin('~/.vim/bundle')
 
 " Colorscheme
@@ -30,17 +28,16 @@ Plug 'chrisbra/unicode.vim'
 call plug#end()
 " ====================================================================== }}}
 
-" Colourscheme ========================================================= {{{
+" Colour scheme ======================================================== {{{
 colorscheme fairyfloss
+
 " Use undercurls to highlight spelling mistakes.
 hi SpellBad cterm=undercurl,italic guisp=#ff857f ctermbg=NONE guifg=NONE guibg=NONE
 hi SpellCap cterm=undercurl,italic guisp=#e6c000 ctermbg=NONE guifg=NONE guibg=NONE
 " }}} ======================================================================
 
-" ==========================================================================
-" Options taken from vim-sensible                                        {{{
+" Options taken from vim-sensible ====================================== {{{
 " See: https://github.com/tpope/vim-sensible/blob/v2.0/plugin/sensible.vim
-" ==========================================================================
 
 if &compatible
   set nocompatible
@@ -174,9 +171,7 @@ if exists(':Man') != 2 && !exists('g:loaded_man') && &filetype !=? 'man' && !has
 endif
 " }}} ======================================================================
 
-" ==========================================================================
-" My personal Vim defaults:                                              {{{
-" ==========================================================================
+" My personal Vim defaults ============================================= {{{
 
 " Default to UTF-8 encoding:
 setglobal fileencoding=utf-8
@@ -280,9 +275,7 @@ endif
 
 " }}} ======================================================================
 
-" ==========================================================================
 " Packages distributed with Vim:                                         {{{
-" ==========================================================================
 
 " Support .editorconfig files
 packadd! editorconfig
