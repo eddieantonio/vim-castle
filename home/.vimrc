@@ -25,6 +25,12 @@ Plug 'tpope/vim-sleuth'
 " See https://github.com/tpope/vim-characterize for an alternative.
 Plug 'chrisbra/unicode.vim'
 
+" Enable fzf when it is installed globally:
+if executable('fzf')
+  set rtp+=/opt/homebrew/opt/fzf
+  Plug 'junegunn/fzf.vim'
+endif
+
 call plug#end()
 " ====================================================================== }}}
 
@@ -326,6 +332,14 @@ vnoremap # "zy:let @/=@z<CR>N
 
 " Save by pressing <Space>w — ever so slightly faster.
 noremap <Leader>w :w<CR>
+
+" Accept completion line:
+" See: https://www.reddit.com/r/vim/comments/232jsu/tab_for_autocompletion/cgswb4s/
+inoremap <expr> <Tab> pumvisible() ? '<C-N>' : '<Tab>'
+
+" Open fzf on tab:
+noremap <Leader><Tab> :GFiles<CR>
+noremap <Leader><S-Tab> :Files<CR>
 " 2}}}
 
 " }}}========================================================================
@@ -341,10 +355,11 @@ noremap <Leader>w :w<CR>
 "  - [x] file history restoration :help last-position-jump
 "  - [x] infinite undofile
 "  - [x] Cursor turning into insert! What?
+"  - [x] fzf and the space-tab map I use
+"  - [x] completion with tab!
+"  - [ ] ALE or some other LSP-like thing.
 "  - [ ] EasyMotion
 "     - [ ] nmap: <Space><Space>
-"  - [ ] ALE or some other LSP-like thing.
-"  - [ ] fzf and the space-tab map I use
 "  - [ ] vim-preserve and the mappings I use for it
 "  - [ ] vim-signature -- markers in the gutter
 "  - [ ] complete filepaths -- can always use Ctrl+X Ctrl+F...
