@@ -31,6 +31,9 @@ if executable('fzf')
   Plug 'junegunn/fzf.vim'
 endif
 
+" Lint engine. Lots of config needed (see below).
+Plug 'dense-analysis/ale'
+
 call plug#end()
 " ====================================================================== }}}
 
@@ -321,6 +324,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" vim-ale
+noremap <C-n> <Plug>(ale_next_wrap)
+noremap <C-p> <Plug>(ale_previous_wrap)
+
 " ニュー!
 " Changes */# in visual mode to search for whatever is selected.
 " See: https://www.reddit.com/r/vim/comments/z051al/what_is_one_key_map_you_use_that_you_dont/ix3uoj5/
@@ -344,6 +351,38 @@ noremap <Leader><S-Tab> :Files<CR>
 
 " }}}========================================================================
 
+" ALE ================================================================== {{{
+
+" TODO: a better place to customize this might be ~/.vim/ftplugin/*.vim
+let g:ale_linters = {
+      \ 'latex': ['chktex'],
+      \ 'tex': ['chktex'],
+      \ 'javascript': ['eslint'],
+      \ 'svelte': ['eslint'],
+      \ 'python': ['ruff', 'pyright'],
+      \ 'rust': ['analyzer', 'cargo'],
+      \ }
+let g:ale_fixers = {
+      \ 'javascript': ['prettier'],
+      \ 'python': ['ruff_format'],
+      \ 'rust': ['rustfmt'],
+      \ 'svelte': ['eslint', 'prettier'],
+      \ 'typescript': ['eslint', 'prettier'],
+      \ }
+
+" Use nerdfonts to indiicate errors
+" See: https://www.nerdfonts.com/
+let g:ale_sign_error = ''
+let g:ale_sign_warning = ''
+
+" Careful with this...
+let g:ale_fix_on_save = 1
+
+" Rust clippy
+let g:ale_rust_cargo_use_clippy = 1
+
+" }}} ======================================================================
+
 " What Eddie relies on:
 "  - [x] Unicode plugin
 "  - [x] vim-slueth -- autodetermine shiftwidth
@@ -357,10 +396,14 @@ noremap <Leader><S-Tab> :Files<CR>
 "  - [x] Cursor turning into insert! What?
 "  - [x] fzf and the space-tab map I use
 "  - [x] completion with tab!
-"  - [ ] ALE or some other LSP-like thing.
+"  - [x] ALE or some other LSP-like thing.
 "  - [ ] EasyMotion
 "     - [ ] nmap: <Space><Space>
 "  - [ ] vim-preserve and the mappings I use for it
 "  - [ ] vim-signature -- markers in the gutter
-"  - [ ] complete filepaths -- can always use Ctrl+X Ctrl+F...
 "  - [ ] vimtex
+"  - [ ] vim-exchange
+"  - [ ] vim-sideways
+"  - [ ] vim-git
+"  - [ ] the thing that highlight characters in the same line for f/t motions
+"  - [ ] complete filepaths -- can always use Ctrl+X Ctrl+F...
