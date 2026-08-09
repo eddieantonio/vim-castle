@@ -34,6 +34,17 @@ endif
 " Lint engine. Lots of config needed (see below).
 Plug 'dense-analysis/ale'
 
+" Adds git +/- signs to the gutter.
+if v:version > 800 || has('nvim')
+  Plug 'mhinz/vim-signify'
+endif
+
+" EasyMotion — required plugin
+Plug 'easymotion/vim-easymotion'
+
+" I have a few mappings that rely on this function:
+Plug 'eddieantonio/vim-preserve'
+
 call plug#end()
 " ====================================================================== }}}
 
@@ -120,7 +131,7 @@ if has('path_extra') && (',' . &g:tags . ',') =~# ',\./tags,'
 endif
 
 " Automatically reload files when they have been modified by a different
-" program. 
+" program.
 set autoread
 
 " A longer command/search history:
@@ -347,9 +358,17 @@ inoremap <expr> <Tab> pumvisible() ? '<C-N>' : '<Tab>'
 " Open fzf on tab:
 noremap <Leader><Tab> :GFiles<CR>
 noremap <Leader><S-Tab> :Files<CR>
+
+" EasyMotion mappings
+map <Leader>f <Plug>(easymotion-prefix)
+map <Leader><Space> <Plug>(easymotion-s)
+
+" Trim whitespace (requires vim-preserve)
+noremap <silent> <Leader>$ :call Preserve("%s/\\s\\+$//")<CR>
+
 " 2}}}
 
-" }}}========================================================================
+" }}} =======================================================================
 
 " ALE ================================================================== {{{
 
@@ -397,13 +416,13 @@ let g:ale_rust_cargo_use_clippy = 1
 "  - [x] fzf and the space-tab map I use
 "  - [x] completion with tab!
 "  - [x] ALE or some other LSP-like thing.
-"  - [ ] EasyMotion
-"     - [ ] nmap: <Space><Space>
-"  - [ ] vim-preserve and the mappings I use for it
+"  - [x] vim-signify -- vcs status in the gutter
+"  - [x] EasyMotion
+"     - [x] nmap: <Space><Space>
+"  - [.] vim-preserve and the mappings I use for it
+"  - [ ] vim-exchange
 "  - [ ] vim-signature -- markers in the gutter
 "  - [ ] vimtex
-"  - [ ] vim-exchange
 "  - [ ] vim-sideways
-"  - [ ] vim-git
 "  - [ ] the thing that highlight characters in the same line for f/t motions
 "  - [ ] complete filepaths -- can always use Ctrl+X Ctrl+F...
