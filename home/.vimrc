@@ -133,13 +133,6 @@ if !(exists('g:is_posix') || exists('g:is_bash') || exists('g:is_kornshell') || 
   let g:is_posix = 1
 endif
 
-" TODO: consider packadd! matchit
-" Load matchit.vim but only if the user hasn't installed a newer version
-if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-  " matchit.vim makes % match HTML tags, if/else/endif and others.
-  runtime! macros/matchit.vim
-endif
-
 " Enable the :Man command shipped inside Vim's man filetype plugin.
 if exists(':Man') != 2 && !exists('g:loaded_man') && &filetype !=? 'man' && !has('nvim')
   runtime ftplugin/man.vim
@@ -194,7 +187,7 @@ if has('mouse')
 endif
 
 " Consider this instead of what vim-sensible did.
-"packadd! matchit
+packadd! matchit
 
 " Configure wrapping
 " Off by default:
