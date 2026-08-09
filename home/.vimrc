@@ -194,10 +194,15 @@ if has('termguicolors') || has('vcon')
   set termguicolors
 endif
 
-" Hack for Ghostty to enable undercurls (squigglies)
+" Hacks for Ghostty:
 if $TERM == "xterm-ghostty"
+  " Enable undercurls (squigglies)
   let &t_Cs = "\e[4:3m"
   let &t_Ce = "\e[4:0m"
+
+  " Change the cursor when going in/out of insert mode.
+  let &t_SI = "\e[6 q"
+  let &t_EI = "\e[2 q"
 endif
 
 " Use <Space> as leader (it's really good!)
@@ -256,6 +261,23 @@ set modelines=5
 if has('clipboard')
   set clipboard=unnamed
 endif
+
+if has('persistent_undo')
+  " TODO: better place for the undo file?
+  let s:vim_undodir = expand('$HOME/.vim/undo')
+  if filewritable(s:vim_undodir) == 0 && exists("*mkdir")
+    call mkdir(s:vim_undodir, "p", 0700)
+  endif
+  execute "set undodir=" . s:vim_undodir
+  set undofile
+endif
+
+" Automatically open the completion menu (Requires Vim 9.1.1590)
+if v:version > 901 || (v:version == 901 && has('patch1590'))
+  " https://www.reddit.com/r/vim/comments/1m9mr2v/whats_new_in_vim_insert_mode_autocomplete_and/
+  set autocomplete
+endif
+
 " }}} ======================================================================
 
 " ==========================================================================
@@ -280,7 +302,8 @@ noremap <BS> <C-^>
 noremap <CR> :nohlsearch<CR>
 
 " I don't need ex mode; I need FORMATTING!
-noremap Q gq
+vnoremap Q gq
+vnoremap Q vipgq
 
 " Lookup the code point, name, and digraph of the character under the cursor.
 " Better version of ga
@@ -293,6 +316,12 @@ noremap Y y$
 vnoremap < >gv
 vnoremap > >gv
 
+" Split navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " ニュー!
 " Changes */# in visual mode to search for whatever is selected.
 " See: https://www.reddit.com/r/vim/comments/z051al/what_is_one_key_map_you_use_that_you_dont/ix3uoj5/
@@ -300,7 +329,7 @@ vnoremap * "zy:let @/=@z<CR>n
 vnoremap # "zy:let @/=@z<CR>N
 " 2}}}
 
-" Weird things that I am used to {{{2
+" Weird things that I am used to                                         {{{2
 
 " Save by pressing <Space>w — ever so slightly faster.
 noremap <Leader>w :w<CR>
@@ -310,16 +339,20 @@ noremap <Leader>w :w<CR>
 
 " What Eddie relies on:
 "  - [x] Unicode plugin
-"  - [x] the thing that auto-determines the shiftwidth setting!
-"  - [x] vim-unimpaired
-"  - [x] vim-slueth ???
-"  - [x] map U [custom mapping + chrisbra/unicode.vim
+"  - [x] vim-slueth -- autodetermine shiftwidth
+"  - [x] vim-unimpaired -- useful maps (yol, yon, [e, etc.)
 "  - [x] map yo* [vim-unimpaired]
 "  - [x] [e mapping [vim-unimpaired]
+"  - [x] map U [custom mapping + chrisbra/unicode.vim
 "  - [x] nmap: <Space>w
-"  - [x] file history restoration
+"  - [x] file history restoration :help last-position-jump
+"  - [x] infinite undofile
+"  - [x] Cursor turning into insert! What?
 "  - [ ] EasyMotion
 "     - [ ] nmap: <Space><Space>
-"  - [ ] infinite undofile
-"  - [ ] vim-preserve and the mappings I use for it
+"  - [ ] ALE or some other LSP-like thing.
 "  - [ ] fzf and the space-tab map I use
+"  - [ ] vim-preserve and the mappings I use for it
+"  - [ ] vim-signature -- markers in the gutter
+"  - [ ] complete filepaths -- can always use Ctrl+X Ctrl+F...
+"  - [ ] vimtex
