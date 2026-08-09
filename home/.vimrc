@@ -372,33 +372,13 @@ noremap <silent> <Leader>$ :call Preserve("%s/\\s\\+$//")<CR>
 
 " ALE ================================================================== {{{
 
-" TODO: a better place to customize this might be ~/.vim/ftplugin/*.vim
-let g:ale_linters = {
-      \ 'latex': ['chktex'],
-      \ 'tex': ['chktex'],
-      \ 'javascript': ['eslint'],
-      \ 'svelte': ['eslint'],
-      \ 'python': ['ruff', 'pyright'],
-      \ 'rust': ['analyzer', 'cargo'],
-      \ }
-let g:ale_fixers = {
-      \ 'javascript': ['prettier'],
-      \ 'python': ['ruff_format'],
-      \ 'rust': ['rustfmt'],
-      \ 'svelte': ['eslint', 'prettier'],
-      \ 'typescript': ['eslint', 'prettier'],
-      \ }
-
-" Use nerdfonts to indiicate errors
+" Use nerdfonts to indicate errors
 " See: https://www.nerdfonts.com/
 let g:ale_sign_error = ''
 let g:ale_sign_warning = ''
 
-" Careful with this...
+" Fix on save by default. Turn this off per filetype or using local .vimrc
 let g:ale_fix_on_save = 1
-
-" Rust clippy
-let g:ale_rust_cargo_use_clippy = 1
 
 " }}} ======================================================================
 
