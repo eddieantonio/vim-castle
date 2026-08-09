@@ -2,8 +2,28 @@
 " Maintainer: Eddie Antonio Santos <hello@eddieantonio.ca>
 " Version:    2026.08.08
 
+" Automatically install vim-plug if it is not installed already
+" See: https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " ==========================================================================
-" Options taken from vim-sensible
+" Plugins                                                                {{{
+" ==========================================================================
+call plug#begin('~/.vim/bundle')
+
+" Colorscheme
+Plug 'tssm/fairyfloss.vim'
+
+call plug#end()
+" ====================================================================== }}}
+
+colorscheme fairyfloss
+
+" ==========================================================================
+" Options taken from vim-sensible                                        {{{
 " See: https://github.com/tpope/vim-sensible/blob/v2.0/plugin/sensible.vim
 " ==========================================================================
 
@@ -137,9 +157,10 @@ endif
 if exists(':Man') != 2 && !exists('g:loaded_man') && &filetype !=? 'man' && !has('nvim')
   runtime ftplugin/man.vim
 endif
+" }}} ======================================================================
 
 " ==========================================================================
-" My personal Vim defaults:
+" My personal Vim defaults:                                              {{{
 " ==========================================================================
 
 " Default to UTF-8 encoding:
@@ -196,10 +217,13 @@ set linebreak
 set showbreak=»»»»
 set wrapmargin=1
 
+set foldmethod=marker
+
 " Searching stuff
 set ignorecase
 set smartcase
 
+" I hate audible bells!
 set visualbell
 
 " Show a title in the terminal
@@ -217,6 +241,7 @@ set modelines=5
 if has('clipboard')
   set clipboard=unnamed
 endif
+" }}} ======================================================================
 
 " ==========================================================================
 " Packages distributed with Vim:
@@ -239,3 +264,4 @@ packadd hlyank
 "  - nmap: <Space><Space>
 "  - nmap: <Space>w 
 "  - [e mapping
+"  - vim-slueth ???

@@ -1,3 +1,7 @@
+# vim-plug
+home/.vim/autoload/plug.vim
+home/.vim/bundle
+
 # Undo files (honestly, they should not even be in this repo):
 home/.vim/undo/
 
