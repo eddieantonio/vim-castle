@@ -42,6 +42,20 @@ endif
 " EasyMotion — required plugin
 Plug 'easymotion/vim-easymotion'
 
+" vim-exchange — cx[Motion] to exchange text
+Plug 'tommcdo/vim-exchange'
+
+" :SidewaysLeft and :SidewaysRight, which I map to  <C-H> and <C-L>
+Plug 'AndrewRadev/sideways.vim'
+
+" Makes highlights for f,t and friends
+Plug 'unblevable/quick-scope'
+
+" Preview for :substitute
+if !has('nvim')
+  Plug 'markonm/traces.vim'
+endif
+
 " I have a few mappings that rely on this function:
 Plug 'eddieantonio/vim-preserve'
 
@@ -329,11 +343,13 @@ noremap Y y$
 vnoremap < >gv
 vnoremap > >gv
 
-" Split navigation
-nnoremap <C-h> <C-w>h
+" Split navigation (I use <C-W><C-W> to switch between vertical splits).
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+
+" vim-sideways (recommended mappings)
+nnoremap <C-h> :SidewaysLeft<CR>
+nnoremap <C-l> :SidewaysRight<CR>
 
 " vim-ale
 noremap <C-n> <Plug>(ale_next_wrap)
@@ -364,8 +380,10 @@ map <Leader>f <Plug>(easymotion-prefix)
 map <Leader><Space> <Plug>(easymotion-s)
 
 " Trim whitespace (requires vim-preserve)
-noremap <silent> <Leader>$ :call Preserve("%s/\\s\\+$//")<CR>
+noremap <silent> <Leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 
+" Open the file/link under the cursor:
+noremap <silent> go :!open <C-R><C-F><CR><CR>
 " 2}}}
 
 " }}} =======================================================================
@@ -399,10 +417,17 @@ let g:ale_fix_on_save = 1
 "  - [x] vim-signify -- vcs status in the gutter
 "  - [x] EasyMotion
 "     - [x] nmap: <Space><Space>
-"  - [.] vim-preserve and the mappings I use for it
-"  - [ ] vim-exchange
-"  - [ ] vim-signature -- markers in the gutter
-"  - [ ] vimtex
-"  - [ ] vim-sideways
-"  - [ ] the thing that highlight characters in the same line for f/t motions
-"  - [ ] complete filepaths -- can always use Ctrl+X Ctrl+F...
+"  - [x] vim-preserve and trimming whitespace
+"  - [x] vim-exchange
+"  - [x] vim-sideways
+"  - [x] complete filepaths -- can always use Ctrl+X Ctrl+F...
+"  - [x] the thing that highlight characters in the same line for f/t motions
+
+" Sometimes used:
+"  - [ ] vim-signature — markers in the gutter
+"  - [ ] hexokinase — finds CSS colours and puts that colour in the gutter.
+"  - [ ] vimtex - tse
+"  - [ ] tabular
+"  - [ ] Replace my &t_SI thing with wincent/terminus.vim?
+"  - [ ] Learn how to use this one: https://github.com/wellle/targets.vim
+"  - [ ] AndrewRadev/splitjoin.vim
