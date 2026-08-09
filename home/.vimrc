@@ -17,10 +17,25 @@ call plug#begin('~/.vim/bundle')
 " Colorscheme
 Plug 'tssm/fairyfloss.vim'
 
+" Lots of good mappings (yon, yol, [e ]e)
+Plug 'tpope/vim-unimpaired'
+
+" Heuristics for setting the shiftwidth and friends:
+Plug 'tpope/vim-sleuth'
+
+" Extremely useful plugin (for me).
+" See https://github.com/tpope/vim-characterize for an alternative.
+Plug 'chrisbra/unicode.vim'
+
 call plug#end()
 " ====================================================================== }}}
 
+" Colourscheme ========================================================= {{{
 colorscheme fairyfloss
+" Use undercurls to highlight spelling mistakes.
+hi SpellBad cterm=undercurl,italic guisp=#ff857f ctermbg=NONE guifg=NONE guibg=NONE
+hi SpellCap cterm=undercurl,italic guisp=#e6c000 ctermbg=NONE guifg=NONE guibg=NONE
+" }}} ======================================================================
 
 " ==========================================================================
 " Options taken from vim-sensible                                        {{{
@@ -214,7 +229,7 @@ packadd! matchit
 " Off by default:
 setglobal nowrap
 set linebreak
-set showbreak=»»»»
+set showbreak=»»
 set wrapmargin=1
 
 set foldmethod=marker
@@ -244,7 +259,7 @@ endif
 " }}} ======================================================================
 
 " ==========================================================================
-" Packages distributed with Vim:
+" Packages distributed with Vim:                                         {{{
 " ==========================================================================
 
 " Support .editorconfig files
@@ -252,16 +267,59 @@ packadd! editorconfig
 
 " Highlight yank for a bit
 packadd hlyank
+" }}} ======================================================================
 
-" ==========================================================================
+" Mappings ============================================================= {{{
+
+" Changes to defaults {{{2
+
+" Switch to alternative file on backspace:
+noremap <BS> <C-^>
+
+" Hide the highlight search term.
+noremap <CR> :nohlsearch<CR>
+
+" I don't need ex mode; I need FORMATTING!
+noremap Q gq
+
+" Lookup the code point, name, and digraph of the character under the cursor.
+" Better version of ga
+noremap U :UnicodeName<CR>
+
+" Even vim's help page says that the default behaviour of Y is wrong.
+noremap Y y$
+
+" Keep the selection when indenting/unindenting in visual mode.
+vnoremap < >gv
+vnoremap > >gv
+
+" ニュー!
+" Changes */# in visual mode to search for whatever is selected.
+" See: https://www.reddit.com/r/vim/comments/z051al/what_is_one_key_map_you_use_that_you_dont/ix3uoj5/
+vnoremap * "zy:let @/=@z<CR>n
+vnoremap # "zy:let @/=@z<CR>N
+" 2}}}
+
+" Weird things that I am used to {{{2
+
+" Save by pressing <Space>w — ever so slightly faster.
+noremap <Leader>w :w<CR>
+" 2}}}
+
+" }}}========================================================================
+
 " What Eddie relies on:
-"  - Unicode plugin
-"  - the thing that auto-determines the shiftwidth setting!
-"  - map U
-"  - map yo*
-"  - file history restoration
-"  - EasyMotion
-"  - nmap: <Space><Space>
-"  - nmap: <Space>w 
-"  - [e mapping
-"  - vim-slueth ???
+"  - [x] Unicode plugin
+"  - [x] the thing that auto-determines the shiftwidth setting!
+"  - [x] vim-unimpaired
+"  - [x] vim-slueth ???
+"  - [x] map U [custom mapping + chrisbra/unicode.vim
+"  - [x] map yo* [vim-unimpaired]
+"  - [x] [e mapping [vim-unimpaired]
+"  - [x] nmap: <Space>w
+"  - [x] file history restoration
+"  - [ ] EasyMotion
+"     - [ ] nmap: <Space><Space>
+"  - [ ] infinite undofile
+"  - [ ] vim-preserve and the mappings I use for it
+"  - [ ] fzf and the space-tab map I use
